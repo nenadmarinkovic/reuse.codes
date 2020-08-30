@@ -1,0 +1,49 @@
+
+
+---
+title: drago mi je da da da da radi
+date: 2019-12-05
+published: true
+category: react
+author: Nenad Marinkovic
+---
+import Text from '../../src/components/Text'
+import React from 'react'
+
+<Text>A basic example of how to use useState. Below is a live playground where you can edit the code. Try changing the count increment</Text>
+
+## Drago mi je da ovo radi
+
+
+```js
+
+
+function App() {
+    const [newTodoValue, setNewTodoValue] = useState("")
+    const [todosList, setTodosList] = useState([])
+    
+    function handleChange(event) {
+        setNewTodoValue(event.target.value)
+    }
+    
+    function addTodo(event) {
+        event.preventDefault()
+        setTodosList(prevTodosList => [...prevTodosList, newTodoValue])
+        setNewTodoValue("")
+    }
+    
+    const allTodos = todosList.map(todo => <p key={todo}>{todo}</p>)
+    
+    return (
+        <div>
+            <form>
+                <input type="text" name="todo" value={newTodoValue} onChange={handleChange}/>
+                <button onClick={addTodo}>Add todo item</button>
+            </form>
+            {allTodos}
+        </div>
+    )
+}
+
+
+```
