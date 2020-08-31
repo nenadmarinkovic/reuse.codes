@@ -22,14 +22,7 @@ const Container = styled.header`
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  margin-bottom: 3em;
-  padding-top: 3em;
-  padding-bottom: 1em;
-  height: 8em;
-
-  @media (max-width: 535px) {
-    height: 8em;
-  }
+  padding: 3em 0;
 
   & a > h1 {
     font-size: 1.7em;

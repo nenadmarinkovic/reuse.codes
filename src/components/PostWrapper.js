@@ -20,7 +20,6 @@ const Wrapper = styled.div`
     text-align: center;
   }
 
-  // Desktop
   @media (min-width: 38em) {
     max-height: min-content;
     & > h1 {

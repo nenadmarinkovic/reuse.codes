@@ -78,10 +78,11 @@ export default ({ data }) => {
             </p>
             <a
               sx={{
-                color: "#3A7A94",
+                color: "#5e95c6",
                 fontWeight: "bold",
-                fontSize: "0.85em",
+                fontSize: "14px",
                 textDecoration: "none",
+                fontFamily: "monospace",
               }}
               target="_blank"
               rel="noopener noreferrer"
