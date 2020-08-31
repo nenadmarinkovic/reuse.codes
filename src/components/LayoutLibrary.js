@@ -21,10 +21,9 @@ const FlexHeader = styled.div`
   justify-content: space-between;
 `;
 
-const TitleSub = styled.a`
+const TitleSub = styled.div`
   font-size: 14px;
   color: white;
-  text-decoration: none;
 `;
 
 const TopHeader = styled.div`
@@ -50,7 +49,7 @@ const MainContent = styled.div`
   padding-bottom: 2em;
 `;
 
-const Title = styled.a`
+const Title = styled.div`
   font-size: 21px;
   color: white;
 `;
@@ -62,12 +61,16 @@ export const LayoutLibrary = ({ children }) => {
       <TopHeader>
         <Container>
           <FlexHeader>
-            <Link to="/">
-              <Title>Reuse</Title>
-            </Link>
-            <Link to="/">
-              <TitleSub>Want to contribute?</TitleSub>
-            </Link>
+            <Title>
+              <Link style={{ color: "white" }} to="/">
+                Reuse
+              </Link>
+            </Title>
+            <TitleSub>
+              <Link style={{ color: "white" }} to="/">
+                Want to contribute?
+              </Link>
+            </TitleSub>
           </FlexHeader>
         </Container>
       </TopHeader>

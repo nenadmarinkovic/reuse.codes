@@ -36,13 +36,12 @@ const Flex = styled.div`
   padding-top: 40px;
 `;
 
-const Title = styled.a`
+const Title = styled.div`
   font-size: 21px;
   color: white;
-  text-decoration: none;
 `;
 
-const TitleSub = styled.a`
+const TitleSub = styled.div`
   font-size: 14px;
   color: white;
   text-decoration: none;
@@ -175,12 +174,16 @@ function Banner() {
       <Header>
         <Container>
           <FlexHeader>
-            <Link to="/">
-              <Title>Reuse</Title>
-            </Link>
-            <Link to="/">
-              <TitleSub>Want to contribute?</TitleSub>
-            </Link>
+            <Title>
+              <Link style={{ color: "white" }} to="/">
+                Reuse
+              </Link>
+            </Title>
+            <TitleSub>
+              <Link style={{ color: "white" }} to="/">
+                Want to contribute?
+              </Link>
+            </TitleSub>
           </FlexHeader>
         </Container>
       </Header>
