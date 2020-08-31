@@ -13,14 +13,12 @@ const LayoutContainer = styled.div`
     max-width: 1132px;
     margin: 0 auto;
     width: 100%;
-    padding-top: 13px;
   }
 `;
 
 const FlexHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  padding-top: 13px;
 `;
 
 const TitleSub = styled.a`
@@ -34,6 +32,9 @@ const TopHeader = styled.div`
   color: white;
   height: 55px;
   position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
   width: 100%;
 `;
 
@@ -50,7 +51,6 @@ const MainContent = styled.div`
 `;
 
 const Title = styled.a`
-  padding-top: 15px;
   font-size: 21px;
   color: white;
 `;

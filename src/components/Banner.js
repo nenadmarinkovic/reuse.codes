@@ -9,6 +9,9 @@ const Header = styled.div`
   height: 55px;
   position: fixed;
   width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
 `;
 
 const Container = styled.div`
@@ -20,7 +23,6 @@ const Container = styled.div`
 const FlexHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  padding-top: 13px;
 `;
 
 const MainBanner = styled.div`
