@@ -19,11 +19,17 @@ const LayoutContainer = styled.div`
 const FlexHeader = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 
 const TitleSub = styled.div`
   font-size: 14px;
   color: white;
+  text-decoration: none;
+  background: #35b67e;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: monospace;
 `;
 
 const TopHeader = styled.div`
@@ -35,6 +41,7 @@ const TopHeader = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
+  z-index: 10;
 `;
 
 const Container = styled.div`
@@ -67,7 +74,7 @@ export const LayoutLibrary = ({ children }) => {
               </Link>
             </Title>
             <TitleSub>
-              <Link style={{ color: "white" }} to="/">
+              <Link style={{ color: "white", fontFamily: "monospace" }} to="/">
                 Want to contribute?
               </Link>
             </TitleSub>

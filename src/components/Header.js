@@ -26,6 +26,7 @@ const Container = styled.header`
 
   & a > h1 {
     font-size: 1.7em;
+    color: #5e95c6;
   }
 
   & > h2 {

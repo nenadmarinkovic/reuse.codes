@@ -23,6 +23,7 @@ const Container = styled.div`
 const FlexHeader = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 
 const MainBanner = styled.div`
@@ -45,6 +46,10 @@ const TitleSub = styled.div`
   font-size: 14px;
   color: white;
   text-decoration: none;
+  background: #35b67e;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: monospace;
 `;
 
 const SVG = styled.svg`
@@ -81,6 +86,7 @@ const Button = styled.button`
   text-transform: uppercase;
   border-radius: 10px;
   cursor: pointer;
+  font-family: monospace;
 `;
 
 const spin1 = keyframes`
@@ -180,7 +186,7 @@ function Banner() {
               </Link>
             </Title>
             <TitleSub>
-              <Link style={{ color: "white" }} to="/">
+              <Link style={{ color: "white", fontFamily: "monospace" }} to="/">
                 Want to contribute?
               </Link>
             </TitleSub>
@@ -197,7 +203,7 @@ function Banner() {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
               </H5>
               <Link to="/library">
-                <Button>Go to Library</Button>
+                <Button>Go to Library →</Button>
               </Link>
             </Text>
             <SVG
@@ -211,7 +217,7 @@ function Banner() {
                 <path
                   id="Vector"
                   d="M696.709 182.876C720.133 245.382 668.395 335.726 635.321 409.735C602.247 483.743 587.953 541.159 536.876 593.761C485.799 646.363 397.95 694.238 327.555 672.727C257.16 651.215 203.974 559.895 184.391 463.667C164.808 367.438 178.715 266.263 232.819 196.684C286.923 127.106 381.536 89.0589 478.127 87.3555C574.718 85.6522 673.314 120.379 696.709 182.876Z"
-                  fill="#F7F7F7"
+                  fill="#fff"
                 />
                 <Black
                   id="Black"

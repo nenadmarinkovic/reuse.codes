@@ -18,6 +18,7 @@ const DefaultLayout = ({ children }) => (
           overflow-y: scroll;
           overflow-x: hidden;
           height: 100%;
+          background-color: #f7f7f8;
         }
       `}
     />

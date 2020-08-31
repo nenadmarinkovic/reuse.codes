@@ -3,7 +3,7 @@ import { jsx } from "../context";
 import styled from "@emotion/styled";
 
 const FooterWrap = styled.footer`
-  background: #111b29;
+  background: #5e95c6;
   margin-top: 120px;
   height: 300px;
   width: 100%;
