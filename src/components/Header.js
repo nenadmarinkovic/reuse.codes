@@ -69,7 +69,7 @@ export const Header = ({ siteDescription }) => (
           color: "black",
         }}
       >
-        <span> Library</span>
+        <span>Library</span>
       </h1>
     </Link>
     <Flex>
@@ -78,6 +78,7 @@ export const Header = ({ siteDescription }) => (
           fontFamily: "Open Sans",
           color: "black",
           fontWeight: "300",
+          marginTop: "15px",
         }}
       >
         {siteDescription}

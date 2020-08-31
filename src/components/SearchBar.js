@@ -12,6 +12,8 @@ const SearchBarContainer = styled.div`
 const Input = styled.input`
   padding: 0.4em;
   border-radius: 5px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
 `;
 
 const SearchBar = ({ category, handleSearchQuery }) => {

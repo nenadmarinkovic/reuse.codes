@@ -12,11 +12,11 @@ const LinkBox = styled.div`
   height: 100%;
   border-radius: 5px;
   border: 1px solid #eaeaea;
-  background-color: #5e95c6;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
 
   & > h3 {
     font-size: 1.2em;
-    color: white;
+    color: black;
   }
 
   @media (min-width: 48em) {

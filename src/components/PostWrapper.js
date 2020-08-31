@@ -12,8 +12,8 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #5e95c6;
-  color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  color: black;
 
   & > h1 {
     font-size: 1.1em;

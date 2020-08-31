@@ -17,6 +17,19 @@ const LayoutContainer = styled.div`
   }
 `;
 
+const TitleSub = styled.a`
+  padding-top: 15px;
+  font-size: 14px;
+  color: white;
+  line-height: 32px;
+  text-decoration: none;
+`;
+
+const FlexHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
 const TopHeader = styled.div`
   background: #111b29;
   color: white;
@@ -50,9 +63,14 @@ export const LayoutLibrary = ({ children }) => {
     <DefaultLayout>
       <TopHeader>
         <Container>
-          <Link to="/">
-            <Title>Reuse</Title>
-          </Link>
+          <FlexHeader>
+            <Link to="/">
+              <Title>Reuse</Title>
+            </Link>
+            <Link to="/">
+              <TitleSub>Want to contribute?</TitleSub>
+            </Link>
+          </FlexHeader>
         </Container>
       </TopHeader>
       <LayoutContainer>

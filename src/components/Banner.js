@@ -36,6 +36,14 @@ const Title = styled.a`
   text-decoration: none;
 `;
 
+const TitleSub = styled.a`
+  padding-top: 15px;
+  font-size: 14px;
+  color: white;
+  line-height: 32px;
+  text-decoration: none;
+`;
+
 const SVG = styled.svg`
   width: 50%;
   margin-top: 20px;
@@ -56,6 +64,11 @@ const H5 = styled.h5`
   font-weight: 500;
   font-size: 21px;
   line-height: 1.8;
+`;
+
+const FlexHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
 `;
 
 const Button = styled.button`
@@ -162,9 +175,14 @@ function Banner() {
     <div>
       <Header>
         <Container>
-          <Link to="/">
-            <Title>Reuse</Title>
-          </Link>
+          <FlexHeader>
+            <Link to="/">
+              <Title>Reuse</Title>
+            </Link>
+            <Link to="/">
+              <TitleSub>Want to contribute?</TitleSub>
+            </Link>
+          </FlexHeader>
         </Container>
       </Header>
       <MainBanner>
