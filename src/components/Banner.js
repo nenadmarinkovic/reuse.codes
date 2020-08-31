@@ -15,6 +15,11 @@ const Container = styled.div`
   max-width: 1132px;
   margin: 0 auto;
   width: 100%;
+`;
+
+const FlexHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
   padding-top: 13px;
 `;
 
@@ -61,13 +66,6 @@ const H5 = styled.h5`
   font-weight: 500;
   font-size: 21px;
   line-height: 1.8;
-`;
-
-const FlexHeader = styled.div`
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  align-items: center;
 `;
 
 const Button = styled.button`

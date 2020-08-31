@@ -17,17 +17,16 @@ const LayoutContainer = styled.div`
   }
 `;
 
+const FlexHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding-top: 13px;
+`;
+
 const TitleSub = styled.a`
   font-size: 14px;
   color: white;
   text-decoration: none;
-`;
-
-const FlexHeader = styled.div`
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  align-items: center;
 `;
 
 const TopHeader = styled.div`
@@ -42,7 +41,6 @@ const Container = styled.div`
   max-width: 1132px;
   margin: 0 auto;
   width: 100%;
-  padding-top: 13px;
 `;
 
 const MainContent = styled.div`
