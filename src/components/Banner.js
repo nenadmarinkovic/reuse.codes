@@ -30,17 +30,14 @@ const Flex = styled.div`
 `;
 
 const Title = styled.a`
-  padding-top: 15px;
   font-size: 21px;
   color: white;
   text-decoration: none;
 `;
 
 const TitleSub = styled.a`
-  padding-top: 15px;
   font-size: 14px;
   color: white;
-  line-height: 32px;
   text-decoration: none;
 `;
 
@@ -69,6 +66,8 @@ const H5 = styled.h5`
 const FlexHeader = styled.div`
   display: flex;
   justify-content: space-between;
+  height: 100%;
+  align-items: center;
 `;
 
 const Button = styled.button`

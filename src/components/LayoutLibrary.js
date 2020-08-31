@@ -18,16 +18,16 @@ const LayoutContainer = styled.div`
 `;
 
 const TitleSub = styled.a`
-  padding-top: 15px;
   font-size: 14px;
   color: white;
-  line-height: 32px;
   text-decoration: none;
 `;
 
 const FlexHeader = styled.div`
   display: flex;
   justify-content: space-between;
+  height: 100%;
+  align-items: center;
 `;
 
 const TopHeader = styled.div`
