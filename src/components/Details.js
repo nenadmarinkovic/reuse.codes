@@ -26,6 +26,17 @@ const FlexItem = styled.div`
   width: 30%;
 `;
 
+const ItemTitle = styled.div`
+  color: #5e95c6;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 15px 0;
+`;
+
+const ItemText = styled.div`
+  color: #717780;
+`;
+
 function Details() {
   return (
     <Container>
@@ -85,12 +96,12 @@ function Details() {
             />
           </svg>
           <br></br>
-          <span>Instant Realtime GraphQL APIs</span>
-          <br></br>
-          <span>
+          <ItemTitle>Instant Realtime GraphQL APIs</ItemTitle>
+
+          <ItemText>
             Point Hasura at your databases and instantly get a rich, realtime
             API instantly, without disrupting your existing apps.
-          </span>
+          </ItemText>
         </FlexItem>
         <FlexItem>
           <svg
@@ -158,12 +169,12 @@ function Details() {
             />
           </svg>
           <br></br>
-          <span>Instant Realtime GraphQL APIs</span>
-          <br></br>
-          <span>
+          <ItemTitle>Instant Realtime GraphQL APIs</ItemTitle>
+
+          <ItemText>
             Point Hasura at your databases and instantly get a rich, realtime
             API instantly, without disrupting your existing apps.
-          </span>
+          </ItemText>
         </FlexItem>
         <FlexItem>
           <svg
@@ -217,12 +228,11 @@ function Details() {
             />
           </svg>
           <br></br>
-          <span>Instant Realtime GraphQL APIs</span>
-          <br></br>
-          <span>
+          <ItemTitle>Instant Realtime GraphQL APIs</ItemTitle>
+          <ItemText>
             Point Hasura at your databases and instantly get a rich, realtime
             API instantly, without disrupting your existing apps.
-          </span>
+          </ItemText>
         </FlexItem>
       </FlexHeader>
     </Container>

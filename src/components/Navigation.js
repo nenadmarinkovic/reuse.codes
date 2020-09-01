@@ -13,7 +13,6 @@ const NavigationLink = styled(Link)`
     font-size: 0.8em;
   }
 
-  // Desktop
   @media (min-width: 48em) {
     & > p {
       font-size: 1em;
@@ -25,7 +24,7 @@ const Navigation = ({ destination, text }) => (
   <NavigationLink
     sx={{
       fontFamily: "heading",
-      textTransform: "uppercase"
+      textTransform: "uppercase",
     }}
     to={destination}
   >

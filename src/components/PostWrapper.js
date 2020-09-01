@@ -8,11 +8,11 @@ const Wrapper = styled.div`
   height: 100%;
   border-radius: 5px;
   display: flex;
-  border: 1px solid #eaeaea;
+  background-color: #e8edf3;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+
   color: black;
 
   & > h1 {

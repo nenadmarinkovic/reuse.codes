@@ -21,7 +21,7 @@ const SEOKeywords = [
   "JavaScript",
   "CSS",
   "HTML",
-  "TypeScript",
+  "typescript",
 ];
 
 export default ({ data }) => {
@@ -30,15 +30,12 @@ export default ({ data }) => {
   return (
     <LayoutLibrary>
       <SEO
-        title="TypeScript Answers"
+        title="CMS Answers"
         description={SEODescription}
         keywords={SEOKeywords}
       />
       <PageTransition>
-        <SearchBar
-          category="typescript"
-          handleSearchQuery={handleSearchQuery}
-        />
+        <SearchBar category="cms" handleSearchQuery={handleSearchQuery} />
         {/* <AnswersHeader category="css" /> */}
         <AnswersIndexWrapper answers={answers} />
       </PageTransition>
@@ -47,11 +44,11 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query TYPESCRIPT_INDEX_QUERY {
+  query typescript_INDEX_QUERY {
     allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: {
-        frontmatter: { published: { eq: true }, category: { eq: "typescript" } }
+        frontmatter: { published: { eq: true }, category: { eq: "cms" } }
       }
     ) {
       nodes {

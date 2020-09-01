@@ -21,7 +21,7 @@ const SEOKeywords = [
   "JavaScript",
   "CSS",
   "HTML",
-  "TypeScript",
+  "typescript",
   "VS-Code",
 ];
 
@@ -36,10 +36,7 @@ export default ({ data }) => {
         keywords={SEOKeywords}
       />
       <PageTransition>
-        <SearchBar
-          category="typescript"
-          handleSearchQuery={handleSearchQuery}
-        />
+        <SearchBar category="cms" handleSearchQuery={handleSearchQuery} />
         {/* <AnswersHeader category="css" /> */}
         <AnswersIndexWrapper answers={answers} />
       </PageTransition>

@@ -25,8 +25,8 @@ const LinkBox = styled.div`
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  border: 1px solid #eaeaea;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  background-color: #e8edf3;
+
 
   &:hover ${ShowMore} {
     visibility: visible;
