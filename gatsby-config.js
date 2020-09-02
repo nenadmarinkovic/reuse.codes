@@ -18,6 +18,7 @@ module.exports = {
         description: "Reusable code snippets for web developers and designers.",
         author: "Nenad Marinkovic",
         siteUrl: "https://reuse.codes",
+        icon: `src/images/favicon.png`,
       },
     },
     {
@@ -87,6 +88,17 @@ module.exports = {
       resolve: "gatsby-plugin-page-transitions",
       options: {
         transitionTime: 400,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Reuse`,
+        short_name: `Reuse`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
       },
     },
     "gatsby-plugin-emotion",
