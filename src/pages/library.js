@@ -49,7 +49,7 @@ export default () => {
   return (
     <LayoutLibrary>
       <SEO
-        title="Reusable code snippets."
+        title="Reusable code snippets for developers and designers."
         description={SEODescription}
         keywords={SEOKeywords}
       />
