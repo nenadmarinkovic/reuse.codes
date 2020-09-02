@@ -13,10 +13,6 @@ const DefaultLayout = ({ children }) => (
           text-decoration: none;
         }
 
-        html {
-          height: 100%;
-        }
-
         body {
           scroll-behavior: smooth;
           overflow-y: scroll;
