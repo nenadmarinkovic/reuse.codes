@@ -58,7 +58,6 @@ const Button = styled.button`
   font-weight: 500;
   font-family: monospace;
   transition: all 0.2s ease;
-  width: 140px;
 `;
 
 const Error = styled.div`
@@ -150,11 +149,35 @@ export default () => {
                 value={inputs.message}
               />
               <Button type="submit" disabled={status.submitting}>
-                {!status.submitting
-                  ? !status.submitted
-                    ? "Submit →"
-                    : "Submitted"
-                  : "Submitting..."}
+                {!status.submitting ? (
+                  !status.submitted ? (
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <span
+                        style={{ fontFamily: "monospace", fontSize: "14px" }}
+                      >
+                        Submit
+                      </span>
+                      <span
+                        style={{
+                          marginLeft: "5px",
+                          fontFamily: "monospace",
+                          fontSize: "14px",
+                        }}
+                      >
+                        →
+                      </span>
+                    </div>
+                  ) : (
+                    "Submitted"
+                  )
+                ) : (
+                  "Submitting..."
+                )}
               </Button>
             </FormFlex>
           </FormContainer>

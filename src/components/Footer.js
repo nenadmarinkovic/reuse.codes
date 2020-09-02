@@ -55,7 +55,14 @@ const Footer = () => {
       </FooterContainer>
       <Copyright>
         © {new Date().getFullYear()} Reuse. All rights reserved. <br></br>
-        Please check out more projects on nenadmarinkovic.com
+        Please check out more projects on{" "}
+        <a
+          style={{ color: "white" }}
+          target="_blank"
+          href="https://nenadmarinkovic.vercel.app"
+        >
+          nenadmarinkovic.com
+        </a>
       </Copyright>
     </FooterWrap>
   );
