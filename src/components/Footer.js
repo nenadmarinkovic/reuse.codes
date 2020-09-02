@@ -3,10 +3,9 @@ import { jsx } from "../context";
 import styled from "@emotion/styled";
 import Form from "./Form";
 
-const FooterWrap = styled.div`
+const FooterWrap = styled.footer`
   background: #5e95c6;
-  margin-top: 120px;
-  width: 100%;
+  padding-top: -300px;
 `;
 
 const FooterForm = styled.div`
@@ -14,10 +13,9 @@ const FooterForm = styled.div`
 `;
 
 const Copyright = styled.span`
-  margin-top: 75px;
   display: block;
   text-align: center;
-  padding: 20px 0;
+  padding: 40px 0 15px;
   font-size: 13.3px;
   color: white;
 `;

@@ -5,6 +5,8 @@ const Container = styled.div`
   max-width: 1132px;
   margin: 0 auto;
   width: 100%;
+  min-height: 60vh;
+  padding-bottom: 170px;
 `;
 
 const FlexHeader = styled.div`

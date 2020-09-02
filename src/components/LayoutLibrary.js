@@ -13,6 +13,8 @@ const LayoutContainer = styled.div`
     max-width: 1132px;
     margin: 0 auto;
     width: 100%;
+    min-height: 80vh;
+    padding-bottom: 200px;
   }
 `;
 
