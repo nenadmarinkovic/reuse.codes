@@ -105,5 +105,6 @@ module.exports = {
     "gatsby-plugin-emotion",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-robots-txt",
+    "gatsby-plugin-react-helmet",
   ],
 };
