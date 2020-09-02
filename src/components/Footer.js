@@ -10,6 +10,16 @@ const FooterWrap = styled.footer`
 
 const FooterForm = styled.div`
   width: 40%;
+  @media (max-width: 1200px) {
+    width: 60%;
+  }
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+
+  @media (max-width: 512px) {
+    width: 100%;
+  }
 `;
 
 const Copyright = styled.span`
@@ -23,6 +33,9 @@ const Copyright = styled.span`
 const FooterFlex = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1200px) {
+    padding: 0 15px;
+  }
 `;
 
 const FooterContainer = styled.div`
@@ -60,6 +73,7 @@ const Footer = () => {
           style={{ color: "white" }}
           target="_blank"
           href="https://nenadmarinkovic.vercel.app"
+          rel="noreferrer"
         >
           nenadmarinkovic.com
         </a>

@@ -11,6 +11,10 @@ const Flex = styled.div`
   font-weight: 300;
   width: 100%;
 
+  @media (max-width: 750px) {
+    justify-content: center;
+  }
+
   @media (max-width: 600px) {
     align-items: start;
     flex-direction: column;
@@ -22,7 +26,7 @@ const Container = styled.header`
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  padding: 3em 0;
+  padding: 5em 0 3em;
 
   & a > h1 {
     font-size: 1.7em;
@@ -36,7 +40,10 @@ const Container = styled.header`
     padding-top: 1em;
   }
 
-  // Desktop
+  @media (max-width: 750px) {
+    align-items: center;
+  }
+
   @media (min-width: 48em) {
     margin-top: 40px;
     & a > h1 {
@@ -73,6 +80,7 @@ export const Header = ({ siteDescription }) => (
           color: "black",
           fontWeight: "300",
           marginTop: "15px",
+          lineHeight: "2",
         }}
       >
         {siteDescription}

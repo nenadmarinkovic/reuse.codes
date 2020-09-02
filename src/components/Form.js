@@ -21,10 +21,13 @@ const FormContainer = styled.form`
   grid-row-gap: 1em;
 `;
 const FormLabel = styled.label`
-  font-size: px;
+  font-size: 21px;
   font-weight: 500;
   text-align: left;
   color: #fff;
+  @media (max-width: 760px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const TextArea = styled.textarea`
@@ -58,6 +61,9 @@ const Button = styled.button`
   font-weight: 500;
   font-family: monospace;
   transition: all 0.2s ease;
+  @media (max-width: 512px) {
+    margin-top: 8px;
+  }
 `;
 
 const Error = styled.div`
@@ -71,9 +77,20 @@ const Message = styled.p`
   font-size: 16px;
 `;
 
+const FormText = styled.div`
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 512px) {
+    display: unset;
+  }
+`;
+
 const FormFlex = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 512px) {
+    flex-direction: column;
+  }
 `;
 
 export default () => {
@@ -151,12 +168,7 @@ export default () => {
               <Button type="submit" disabled={status.submitting}>
                 {!status.submitting ? (
                   !status.submitted ? (
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
+                    <FormText>
                       <span
                         style={{ fontFamily: "monospace", fontSize: "14px" }}
                       >
@@ -171,7 +183,7 @@ export default () => {
                       >
                         →
                       </span>
-                    </div>
+                    </FormText>
                   ) : (
                     "Submitted"
                   )

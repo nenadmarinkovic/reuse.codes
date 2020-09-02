@@ -18,6 +18,9 @@ const Container = styled.div`
   max-width: 1132px;
   margin: 0 auto;
   width: 100%;
+  @media (max-width: 1200px) {
+    padding: 0 15px;
+  }
 `;
 
 const FlexHeader = styled.div`
@@ -28,6 +31,9 @@ const FlexHeader = styled.div`
 
 const MainBanner = styled.div`
   height: 700px;
+  @media (max-width: 960px) {
+    height: unset;
+  }
 `;
 
 const Flex = styled.div`
@@ -55,16 +61,33 @@ const TitleSub = styled.div`
 const SVG = styled.svg`
   width: 50%;
   margin-top: 20px;
+  @media (max-width: 960px) {
+    display: none;
+  }
 `;
 
 const Text = styled.div`
   color: #1b2738;
   width: 45%;
+  @media (max-width: 960px) {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  @media (max-width: 960px) {
+    text-align: center;
+  }
 `;
 
 const H1 = styled.h1`
   font-weight: 800;
   font-size: 71px;
+  @media (max-width: 960px) {
+    font-size: 51px;
+  }
+  @media (max-width: 512px) {
+    font-size: 31px;
+  }
 `;
 
 const H5 = styled.h5`
@@ -72,6 +95,9 @@ const H5 = styled.h5`
   font-weight: 500;
   font-size: 21px;
   line-height: 1.8;
+  @media (max-width: 512px) {
+    font-size: 16px;
+  }
 `;
 
 const Button = styled.button`

@@ -7,11 +7,22 @@ const Container = styled.div`
   width: 100%;
   min-height: 60vh;
   padding-bottom: 170px;
+  @media (max-width: 1024px) {
+    padding: 0 15px;
+  }
 `;
 
 const FlexHeader = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
 `;
 
 const DetailsTitle = styled.div`
@@ -22,10 +33,27 @@ const DetailsTitle = styled.div`
   color: #5e95c6;
   margin: 0 auto;
   text-align: center;
+  @media (max-width: 960px) {
+    padding: 90px 0 70px 0;
+    font-size: 30px;
+  }
+  @media (max-width: 750px) {
+    padding: 80px 0 40px 0;
+    width: 80%;
+  }
+
+  @media (max-width: 512px) {
+    width: 100%;
+    font-size: 23px;
+  }
 `;
 
 const FlexItem = styled.div`
   width: 30%;
+  @media (max-width: 750px) {
+    width: 100%;
+    margin-top: 30px;
+  }
 `;
 
 const ItemTitle = styled.div`
