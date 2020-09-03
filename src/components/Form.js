@@ -155,7 +155,7 @@ export default () => {
         <MainForm>
           <FormContainer onSubmit={handleOnSubmit}>
             <FormLabel htmlFor="message">
-              Lorem ipsum dolor sit amet, consectetur adipiscing
+              Found a bug? Please, submit a message here.
             </FormLabel>
             <FormFlex>
               <TextArea
@@ -193,9 +193,10 @@ export default () => {
               </Button>
             </FormFlex>
           </FormContainer>
+          <br></br>
           {status.info.error && <Error>Error: {status.info.msg}</Error>}
           {!status.info.error && status.info.msg && (
-            <Message>{status.info.msg}</Message>
+            <Message style={{ color: "white" }}>{status.info.msg}</Message>
           )}
         </MainForm>
       </FlexContainer>

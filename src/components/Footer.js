@@ -68,7 +68,7 @@ const Footer = () => {
       </FooterContainer>
       <Copyright>
         © {new Date().getFullYear()} Reuse. All rights reserved. <br></br>
-        Please check out more projects on{" "}
+        Check out more projects on{" "}
         <a
           style={{ color: "white" }}
           target="_blank"

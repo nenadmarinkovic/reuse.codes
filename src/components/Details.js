@@ -65,6 +65,7 @@ const ItemTitle = styled.div`
 
 const ItemText = styled.div`
   color: #717780;
+  line-height: 1.7;
 `;
 
 function Details() {
@@ -126,11 +127,12 @@ function Details() {
             />
           </svg>
           <br></br>
-          <ItemTitle>Instant Realtime GraphQL APIs</ItemTitle>
+          <ItemTitle>Free and open-source</ItemTitle>
 
           <ItemText>
-            Point Hasura at your databases and instantly get a rich, realtime
-            API instantly, without disrupting your existing apps.
+            Manage code snippets using only your GitHub profile, or clone this
+            repository and customize it to your needs. Suitable both for
+            individual developers or teams.
           </ItemText>
         </FlexItem>
         <FlexItem>
@@ -199,11 +201,12 @@ function Details() {
             />
           </svg>
           <br></br>
-          <ItemTitle>Instant Realtime GraphQL APIs</ItemTitle>
+          <ItemTitle>Fast in every sense</ItemTitle>
 
           <ItemText>
-            Point Hasura at your databases and instantly get a rich, realtime
-            API instantly, without disrupting your existing apps.
+            Using GraphQL in combination with React is fast in every way that
+            matters. Just upload your .mdx file in one of the content
+            directories and see results immediately.
           </ItemText>
         </FlexItem>
         <FlexItem>
@@ -258,10 +261,10 @@ function Details() {
             />
           </svg>
           <br></br>
-          <ItemTitle>Instant Realtime GraphQL APIs</ItemTitle>
+          <ItemTitle>Secure by default</ItemTitle>
           <ItemText>
-            Point Hasura at your databases and instantly get a rich, realtime
-            API instantly, without disrupting your existing apps.
+            All your code snippets are stored on the GitHub repository, so no
+            need to worry about security issues.
           </ItemText>
         </FlexItem>
       </FlexHeader>
