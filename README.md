@@ -1,3 +1,3 @@
-### ♻️ - Reusable code snippets for web developers and designers.
+### ♻️ Reusable code snippets for web developers and designers.
 
 In development mode...
