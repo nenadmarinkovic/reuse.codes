@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import styled from "@emotion/styled";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import PageTransition from "gatsby-plugin-page-transitions";
 import { LayoutLibrary } from "../components/LayoutLibrary";
@@ -36,14 +36,14 @@ const DateAndCategory = styled.div`
   }
 
   & > p {
-    font-size: 0.85em;
+    font-size: 14px;
     text-transform: uppercase;
   }
 
   @media (min-width: 48em) {
     flex-direction: row;
     & > p {
-      font-size: 0.85em;
+      font-size: 14px;
       text-transform: uppercase;
     }
   }
@@ -64,15 +64,30 @@ export default ({ data }) => {
           <DateAndCategory>
             <p
               sx={{
-                fontWeight: "300",
+                fontWeight: "700",
+                
+                color: "#5e95c6",
+               
               }}
             >
-              category: {category}
+              <Link sx={{
+                color: "#5e95c6",
+                fontWeight: "bold",
+                fontSize: "14px",
+                textDecoration: "none",
+                fontFamily: "monospace",
+              }} to={`/${category}-answers`}>
+                category: {category}
+              </Link>
             </p>
             <p
-              sx={{
-                fontWeight: "300",
-              }}
+             sx={{
+              color: "#5e95c6",
+              fontWeight: "bold",
+              fontSize: "19px",
+              textDecoration: "none",
+              fontFamily: "monospace",
+            }}
             >
               posted: {date}
             </p>

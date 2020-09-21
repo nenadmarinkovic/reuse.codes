@@ -130,9 +130,8 @@ function Details() {
           <ItemTitle>Free and open-source</ItemTitle>
 
           <ItemText>
-            Manage code snippets using only your GitHub profile, or clone this
-            repository and customize it to your needs. Suitable both for
-            individual developers or teams.
+            Manage code snippets using your GitHub profile, or clone this
+            repository and customize it to suit your needs.
           </ItemText>
         </FlexItem>
         <FlexItem>
@@ -205,8 +204,7 @@ function Details() {
 
           <ItemText>
             Using GraphQL in combination with React is fast in every way that
-            matters. Just upload your .mdx file in one of the content
-            directories and see results immediately.
+            matters. See results immediately after uploading .mdx files.
           </ItemText>
         </FlexItem>
         <FlexItem>
