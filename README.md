@@ -1,4 +1,4 @@
-## ♻️ Reuse - Reusable code snippets for web developers and designers.
+♻️ Reuse - Reusable code snippets for web developers and designers.
 
 ---
 
