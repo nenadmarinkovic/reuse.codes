@@ -53,7 +53,7 @@ const TitleSub = styled.div`
   color: white;
   text-decoration: none;
   background: #35b67e;
-  padding: 10px;
+  padding: 6px 15px;
   border-radius: 10px;
   font-family: monospace;
 `;
