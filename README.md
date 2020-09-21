@@ -1,3 +1,3 @@
-# reuse.codes
+# Reuse - Reusable code snippets for web developers and designers. ♻️
 
 In development mode...
