@@ -82,9 +82,14 @@ export const LayoutLibrary = ({ children }) => {
               </Link>
             </Title>
             <TitleSub>
-              <Link style={{ color: "white", fontFamily: "monospace" }} to="/">
+              <a
+                style={{ color: "white", fontFamily: "monospace" }}
+                target="_blank"
+                href="https://github.com/nenadmarinkovic/reuse.codes"
+                rel="noreferrer noopener"
+              >
                 Want to contribute?
-              </Link>
+              </a>
             </TitleSub>
           </FlexHeader>
         </Container>
