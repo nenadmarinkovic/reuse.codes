@@ -11,6 +11,15 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-preload-fonts",
     {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Proxima Nova"],
+          urls: ["/fonts"],
+        },
+      },
+    },
+    {
       resolve: "gatsby-theme-seo",
       options: {
         title: "Reuse",
