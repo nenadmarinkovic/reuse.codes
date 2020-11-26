@@ -120,12 +120,17 @@ var plugins = [{
     "plugins": []
   }
 }, {
+  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-sitemap/gatsby-ssr */ "./node_modules/gatsby-plugin-sitemap/gatsby-ssr.js"),
+  options: {
+    "plugins": []
+  }
+}, {
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-react-helmet/gatsby-ssr */ "./node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js"),
   options: {
     "plugins": []
   }
 }, {
-  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-sitemap/gatsby-ssr */ "./node_modules/gatsby-plugin-sitemap/gatsby-ssr.js"),
+  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-preload-fonts/gatsby-ssr */ "./node_modules/gatsby-plugin-preload-fonts/gatsby-ssr.js"),
   options: {
     "plugins": []
   }
@@ -144,11 +149,6 @@ var plugins = [{
     "legacy": true,
     "theme_color_in_head": true,
     "cacheDigest": "6528244f3b31f8428452471da74242c1"
-  }
-}, {
-  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-preload-fonts/gatsby-ssr */ "./node_modules/gatsby-plugin-preload-fonts/gatsby-ssr.js"),
-  options: {
-    "plugins": []
   }
 }, {
   plugin: __webpack_require__(/*! ./gatsby-ssr */ "./gatsby-ssr.js"),

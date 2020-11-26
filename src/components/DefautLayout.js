@@ -30,27 +30,23 @@ const DefaultLayout = ({ children }) => (
         }
 
         ::placeholder {
-          font-family: 'Proxima Nova';
-        }
-
-        html {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
           font-family: "Proxima Nova";
-          text-decoration: none;
         }
 
         * {
           margin: 0;
           padding: 0;
           box-sizing: border-box;
-          font-family: "Proxima Nova";
+          font-family: "Proxima Nova", sans-serif;
           text-decoration: none;
         }
 
-        .prism-code {
-          margin-top: 60px !important;
+        html {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Proxima Nova", sans-serif;
+          text-decoration: none;
         }
 
         a {

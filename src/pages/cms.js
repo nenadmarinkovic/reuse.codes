@@ -6,7 +6,7 @@ import AnswersIndexWrapper from "../components/AnswersIndexWrapper";
 import SEO from "gatsby-theme-seo/src/components/seo";
 import SearchBar from "../components/SearchBar";
 import { useSearchBar } from "../useSearchBar";
-import PageTransition from "gatsby-plugin-page-transitions";
+import Fade from "react-reveal/Fade"
 
 const SEODescription = `
   Reusable code snippets for web developers and designers.
@@ -28,17 +28,19 @@ export default ({ data }) => {
   const { answers, handleSearchQuery } = useSearchBar(data);
 
   return (
+    <Fade>
     <LayoutLibrary>
       <SEO
         title="CMS"
         description={SEODescription}
         keywords={SEOKeywords}
       />
-      <PageTransition>
+
         <SearchBar category="cms" handleSearchQuery={handleSearchQuery} />
         <AnswersIndexWrapper answers={answers} />
-      </PageTransition>
+  
     </LayoutLibrary>
+    </Fade>
   );
 };
 
