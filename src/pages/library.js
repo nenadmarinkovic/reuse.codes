@@ -38,14 +38,14 @@ export default () => {
       />
       <PageTransition>
         <Categories>
-          <PageLink page="html-answers" title="HTML" />
-          <PageLink page="css-answers" title="CSS" />
-          <PageLink page="sass-answers" title="Sass" />
-          <PageLink page="javascript-answers" title="JavaScript" />
-          <PageLink page="react-answers" title="React" />
-          <PageLink page="react-answers" title="Vue" />
-          <PageLink page="git-answers" title="Git" />
-          <PageLink page="cms-answers" title="CMS" />
+          <PageLink page="html" title="HTML and markup languages" />
+          <PageLink page="css" title="CSS and CSS-in-JS solutions" />
+          <PageLink page="sass" title="Sass and Less" />
+          <PageLink page="javascript" title="JavaScript" />
+          <PageLink page="node" title="Node and Express" />
+          <PageLink page="react" title="React" />
+          <PageLink page="git" title="Git and Github" />
+          <PageLink page="cms" title="Content Management Systems" />
         </Categories>
     
       </PageTransition>

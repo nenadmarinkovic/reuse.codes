@@ -8,7 +8,7 @@ import { jsx } from "../context";
 
 const IntroText = styled.div`
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  // grid-template-rows: repeat(2, 1fr);
   grid-gap: 2em;
   @media (max-width: 765px) {
     grid-gap: 0;
@@ -19,9 +19,12 @@ const Title = styled.h1`
   grid-row: 1;
   text-align: start;
   font-size: 1.5em;
+  color: #323f4b;
+  line-height: 1.5;
+  width: 60%;
 
   @media (min-width: 48em) {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 `;
 
@@ -31,20 +34,22 @@ const DateAndCategory = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
+
   @media (max-width: 765px) {
     height: 80px;
   }
 
   & > p {
-    font-size: 14px;
-    text-transform: uppercase;
+    font-size: 15px;
   }
 
   @media (min-width: 48em) {
     flex-direction: row;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+
     & > p {
-      font-size: 14px;
-      text-transform: uppercase;
+      font-size: 15px;
     }
   }
 `;
@@ -65,39 +70,46 @@ export default ({ data }) => {
             <p
               sx={{
                 fontWeight: "700",
-                
-                color: "#5e95c6",
-               
+                color: "#55AAD4",
               }}
             >
-              <Link sx={{
-                color: "#5e95c6",
-                fontWeight: "bold",
-                fontSize: "14px",
-                textDecoration: "none",
-                fontFamily: "monospace",
-              }} to={`/${category}-answers`}>
-                category: {category}
+              <Link
+                sx={{
+                  background: "#55AAD4",
+                  padding: "5px 10px",
+                  color: "white",
+                  borderRadius: "5px",
+                  fontWeight: "700",
+                  fontSize: "15px",
+                  textDecoration: "none",
+                }}
+                to={`/${category}`}
+              >
+                Category: <span style={{textTransform: "uppercase"}}>{category}</span>
               </Link>
             </p>
             <p
-             sx={{
-              color: "#5e95c6",
-              fontWeight: "bold",
-              fontSize: "19px",
-              textDecoration: "none",
-              fontFamily: "monospace",
-            }}
+              sx={{
+                background: "#55AAD4",
+                padding: "5px 10px",
+                color: "white",
+                borderRadius: "5px",
+                fontWeight: "700",
+                fontSize: "15px",
+                textDecoration: "none",
+              }}
             >
-              posted: {date}
+              Posted: {date}
             </p>
             <a
               sx={{
-                color: "#5e95c6",
-                fontWeight: "bold",
-                fontSize: "14px",
+                background: "#7BC47F",
+                padding: "5px 10px",
+                color: "white",
+                borderRadius: "5px",
+                fontWeight: "700",
+                fontSize: "15px",
                 textDecoration: "none",
-                fontFamily: "monospace",
               }}
               target="_blank"
               rel="noopener noreferrer"
@@ -120,7 +132,6 @@ export const query = graphql`
         title
         date(formatString: "YYYY MMMM Do")
         category
-        author
       }
       body
       excerpt

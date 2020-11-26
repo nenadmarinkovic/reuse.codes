@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import Highlight, { defaultProps } from "prism-react-renderer";
-import theme from "prism-react-renderer/themes/nightOwl";
+import theme from "../../custom-theme";
 import React from "react";
 import { LiveEditor, LiveError, LivePreview, LiveProvider } from "react-live";
 import { copyToClipboard } from "../../utils/copy-to-clipboard";

@@ -12,7 +12,7 @@ export const Layout = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>
-          Reuse | Reusable code snippets for web developers and designers.
+        ♺ Reuse | Reusable code snippets for web developers and designers.
         </title>
       </Helmet>
       <Banner />

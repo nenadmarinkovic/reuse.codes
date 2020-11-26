@@ -31,14 +31,11 @@ const TitleSub = styled.div`
   font-size: 14px;
   color: white;
   text-decoration: none;
-  background: #35b67e;
-  padding: 6px 15px;
-  border-radius: 10px;
-  font-family: monospace;
+  letter-spacing: 0.5px;
 `;
 
 const TopHeader = styled.div`
-  background: #111b29;
+  background: #323f4b;
   color: white;
   height: 55px;
   position: fixed;
@@ -67,6 +64,7 @@ const MainContent = styled.div`
 const Title = styled.div`
   font-size: 21px;
   color: white;
+  letter-spacing: 1px;
 `;
 
 export const LayoutLibrary = ({ children }) => {
@@ -78,12 +76,12 @@ export const LayoutLibrary = ({ children }) => {
           <FlexHeader>
             <Title>
               <Link style={{ color: "white" }} to="/">
-                Reuse
+                ♺ Reuse
               </Link>
             </Title>
             <TitleSub>
               <a
-                style={{ color: "white", fontFamily: "monospace" }}
+                style={{ color: "white" }}
                 target="_blank"
                 href="https://github.com/nenadmarinkovic/reuse.codes"
                 rel="noreferrer noopener"

@@ -1,16 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: "Reuse",
+    title: "♺ Reuse",
     description: "Reusable code snippets for web developers and designers.",
   },
   plugins: [
     "gatsby-plugin-mdx",
-    {
-      resolve: "gatsby-plugin-google-fonts",
-      options: {
-        fonts: ["Open Sans"],
-      },
-    },
     {
       resolve: "gatsby-theme-seo",
       options: {
@@ -80,8 +74,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/content/vs-code`,
-        name: "vs-code",
+        path: `${__dirname}/content/node`,
+        name: "node",
       },
     },
     {
@@ -93,11 +87,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Reuse`,
+        name: `♺ Reuse`,
         short_name: `Reuse`,
         start_url: `/`,
         background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
         display: `standalone`,
         icon: `src/images/favicon.png`,
       },

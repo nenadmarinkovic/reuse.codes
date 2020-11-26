@@ -3,7 +3,7 @@ const path = require(`path`);
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
-  const answerLayoutTemplate = path.resolve("src/templates/answer-layout.js");
+  const answerLayoutTemplate = path.resolve("src/templates/directory.js");
 
   return graphql(`
     {
@@ -18,7 +18,6 @@ exports.createPages = ({ actions, graphql }) => {
             title
             date
             category
-            author
           }
           fields {
             slug
@@ -32,7 +31,6 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     const answers = result.data.allMdx.nodes;
-
     answers.forEach((answer, index) => {
       const previous = index === answer.length - 1 ? null : answers[index + 1];
       const next = index === 0 ? null : answers[index - 1];
@@ -59,6 +57,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value,
     });
+    
     createNodeField({
       name: "editLink",
       node,

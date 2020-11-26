@@ -12,6 +12,14 @@ const Wrapper = styled.main`
   grid-gap: 1em;
 `;
 
+const Category = styled.p`
+ margin-top: 5px;
+ background: #7CC1E4;
+ color: white;
+ padding: 6px 10px;
+ border-radius: 5px;
+`;
+
 const AnswersIndexWrapper = ({ answers }) => (
   <Wrapper>
     {answers.map(({ id, frontmatter, fields }) => (
@@ -25,7 +33,7 @@ const AnswersIndexWrapper = ({ answers }) => (
         <PostWrapper>
           <h1>{frontmatter.title}</h1>
           <p>{frontmatter.date}</p>
-          <p>{frontmatter.category}</p>
+          <Category>{frontmatter.category}</Category>
         </PostWrapper>
       </Link>
     ))}

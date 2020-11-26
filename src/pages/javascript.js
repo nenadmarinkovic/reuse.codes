@@ -4,8 +4,8 @@ import { graphql } from "gatsby";
 import { LayoutLibrary } from "../components/LayoutLibrary";
 import AnswersIndexWrapper from "../components/AnswersIndexWrapper";
 import SEO from "gatsby-theme-seo/src/components/seo";
-import SearchBar from "../components/SearchBar";
 import { useSearchBar } from "../useSearchBar";
+import SearchBar from "../components/SearchBar";
 import PageTransition from "gatsby-plugin-page-transitions";
 
 const SEODescription = `
@@ -21,7 +21,6 @@ const SEOKeywords = [
   "JavaScript",
   "CSS",
   "HTML",
-  "typescript",
 ];
 
 export default ({ data }) => {
@@ -30,13 +29,13 @@ export default ({ data }) => {
   return (
     <LayoutLibrary>
       <SEO
-        title="CMS Answers"
+        title="JavaScript Answers"
         description={SEODescription}
         keywords={SEOKeywords}
       />
       <PageTransition>
-        <SearchBar category="cms" handleSearchQuery={handleSearchQuery} />
-        {/* <AnswersHeader category="css" /> */}
+        <SearchBar category="css" handleSearchQuery={handleSearchQuery} />
+        {/* <AnswersHeader category="javascript" /> */}
         <AnswersIndexWrapper answers={answers} />
       </PageTransition>
     </LayoutLibrary>
@@ -44,11 +43,11 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query typescript_INDEX_QUERY {
+  query JAVASCRIPT_INDEX_QUERY {
     allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: {
-        frontmatter: { published: { eq: true }, category: { eq: "cms" } }
+        frontmatter: { published: { eq: true }, category: { eq: "javascript" } }
       }
     ) {
       nodes {
@@ -58,7 +57,6 @@ export const query = graphql`
           title
           date(formatString: "YYYY MMMM Do")
           category
-          author
         }
         fields {
           slug

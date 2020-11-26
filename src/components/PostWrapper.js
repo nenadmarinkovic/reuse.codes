@@ -32,6 +32,7 @@ const Wrapper = styled.div`
     & > p {
       padding-top: 0.5em;
       font-size: 0.85em;
+      font-weight: 300;
     }
   }
 `;

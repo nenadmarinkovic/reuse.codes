@@ -9,7 +9,7 @@ import { useSearchBar } from "../useSearchBar";
 import PageTransition from "gatsby-plugin-page-transitions";
 
 const SEODescription = `
-  Reusable code snippets.
+  Reusable code snippets for web developers and designers.
 `;
 
 const SEOKeywords = [
@@ -21,6 +21,7 @@ const SEOKeywords = [
   "JavaScript",
   "CSS",
   "HTML",
+  "Sass",
 ];
 
 export default ({ data }) => {
@@ -29,12 +30,12 @@ export default ({ data }) => {
   return (
     <LayoutLibrary>
       <SEO
-        title="CSS Answers"
+        title="Sass"
         description={SEODescription}
         keywords={SEOKeywords}
       />
       <PageTransition>
-        <SearchBar category="css" handleSearchQuery={handleSearchQuery} />
+        <SearchBar category="sass" handleSearchQuery={handleSearchQuery} />
         <AnswersIndexWrapper answers={answers} />
       </PageTransition>
     </LayoutLibrary>
@@ -42,11 +43,11 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query Sass_INDEX_QUERY {
+  query SASS_INDEX_QUERY {
     allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: {
-        frontmatter: { published: { eq: true }, category: { eq: "css" } }
+        frontmatter: { published: { eq: true }, category: { eq: "sass" } }
       }
     ) {
       nodes {
@@ -56,7 +57,7 @@ export const query = graphql`
           title
           date(formatString: "YYYY MMMM Do")
           category
-          author
+          
         }
         fields {
           slug

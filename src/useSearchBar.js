@@ -10,9 +10,7 @@ export const useSearchBar = (data) => {
 
   const handleSearchQuery = (e) => {
     const query = e.target.value;
-
     const answers = data.allMdx.nodes || [];
-
     const filteredData = answers.filter((answer) => {
       const { title } = answer.frontmatter;
       return title.toLowerCase().includes(query.toLowerCase());

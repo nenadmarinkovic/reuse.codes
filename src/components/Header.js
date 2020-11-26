@@ -30,7 +30,7 @@ const Container = styled.header`
 
   & a > h1 {
     font-size: 1.7em;
-    color: #5e95c6;
+    color: #323F4B;
   }
 
   & > h2 {
@@ -47,7 +47,7 @@ const Container = styled.header`
   @media (min-width: 48em) {
     margin-top: 40px;
     & a > h1 {
-      font-size: 2.3em;
+      font-size: 2em;
     }
     & > h2 {
       font-size: 1em;
@@ -66,8 +66,7 @@ export const Header = ({ siteDescription }) => (
     >
       <h1
         sx={{
-          fontFamily: "Open Sans",
-          color: "black",
+          color: "black"
         }}
       >
         <span>Library</span>
@@ -76,7 +75,6 @@ export const Header = ({ siteDescription }) => (
     <Flex>
       <h2
         sx={{
-          fontFamily: "Open Sans",
           color: "black",
           fontWeight: "300",
           marginTop: "15px",

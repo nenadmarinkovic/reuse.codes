@@ -1,23 +1,43 @@
 ---
-title: How to useState
-date: 2019-12-05
+title: Setup JSX support in emmet
+date: 2020-01-17
 published: true
 category: react
-author: Nenad Marinkovic
+
 ---
 import Text from '../../src/components/Text'
-import React from 'react'
 
-<Text>A basic example of how to use useState. Below is a live playground where you can edit the code. Try changing the count increment</Text>
+<Text>You might need to add this additional step to your VS-Code settings to support JSX in VS-Code, even though Emmet is nativly supported out of the box</Text>
 
+```js
+import Document from 'next/document'
+import { ServerStyleSheet } from 'styled-components'
 
-```js react
-def find_missing(sequence)
-  consecutive     = sequence.each_cons(2)
-  differences     = consecutive.map { |a,b| b - a }
-  sequence        = differences.max_by { |n| differences.count(n) }
-  missing_between = consecutive.find { |a,b| (b - a) != sequence }
-  missing_between.first + sequence
-end
-find_missing([2,4,6,10])
+export default class MyDocument extends Document {
+  static async getInitialProps(ctx) {
+    const sheet = new ServerStyleSheet()
+    const originalRenderPage = ctx.renderPage
+
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: (App) => (props) =>
+            sheet.collectStyles(<App {...props} />),
+        })
+
+      const initialProps = await Document.getInitialProps(ctx)
+      return {
+        ...initialProps,
+        styles: (
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>
+        ),
+      }
+    } finally {
+      sheet.seal()
+    }
+  }
+}
 ```

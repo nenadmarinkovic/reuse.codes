@@ -3,32 +3,47 @@ title: Flattern nested array
 date: 2019-12-05
 published: true
 category: javascript
-author: Nenad Marinkovic
+
 ---
 import Text from '../../src/components/Text'
 
 <Text>Two ways to flattern a nested array. he first is the more traditional approach using reduce and concat. </Text>
 
-```rb
-const myArray = [['1', '2', '3'], ['4', '5']];
+```javascript
 
-const flatArray = myArray.reduce((total, amount) => total.concat(amount));
+import Document from 'next/document'
+import { ServerStyleSheet } from 'styled-components'
 
->> ['1', '2', '3', '4', '5']
+export default class MyDocument extends Document {
+  static async getInitialProps(ctx) {
+    const sheet = new ServerStyleSheet()
+    const originalRenderPage = ctx.renderPage
 
-```
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+) => (props) =>
+            // .collectStyles(<App {...props} />),
+        })
 
-<Text>The second uses the new flat() method. As an argument you can pass in the depth - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat</a> </Text>
+      // const initialProps = await Document.getInitialProps(ctx)
+      // return {
+      //   ...initialProps,
+      //   styles: (
+      //     <>
+      //       {initialProps.styles}
+      //       {sheet.getStyleElement()}
+      //     </>
+      //   ),
+      }
+    } finally {
+      sheet.seal()
+    }
+  }
+}
 
-```js
-const nestedArray = [1, 2, [3, 4]].flat();
-nestedArray.flat(); 
->> [1, 2, 3, 4]
-```
-<Text>With depth</Text>
+// hkjashkdjhas
+// sjlaskjd
 
-```js
-var nestedArray = [1, 2, [3, 4, [5, 6]]];
-nestedArray.flat(2);
->> [1, 2, 3, 4, 5, 6]
+
 ```

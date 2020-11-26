@@ -22,20 +22,17 @@ const SEOKeywords = [
   "CSS",
   "HTML",
 ];
-
 export default ({ data }) => {
   const { answers, handleSearchQuery } = useSearchBar(data);
-
   return (
     <LayoutLibrary>
       <SEO
-        title="JavaScript Answers"
+        title="React"
         description={SEODescription}
         keywords={SEOKeywords}
       />
       <PageTransition>
-        <SearchBar category="css" handleSearchQuery={handleSearchQuery} />
-        {/* <AnswersHeader category="javascript" /> */}
+        <SearchBar category="react" handleSearchQuery={handleSearchQuery} />
         <AnswersIndexWrapper answers={answers} />
       </PageTransition>
     </LayoutLibrary>
@@ -43,11 +40,11 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query JAVASCRIPT_INDEX_QUERY {
+  query REACT_INDEX_QUERY {
     allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: {
-        frontmatter: { published: { eq: true }, category: { eq: "javascript" } }
+        frontmatter: { published: { eq: true }, category: { eq: "react" } }
       }
     ) {
       nodes {
@@ -57,7 +54,6 @@ export const query = graphql`
           title
           date(formatString: "YYYY MMMM Do")
           category
-          author
         }
         fields {
           slug

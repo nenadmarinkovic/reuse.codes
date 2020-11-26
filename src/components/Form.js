@@ -24,7 +24,7 @@ const FormLabel = styled.label`
   font-size: 21px;
   font-weight: 500;
   text-align: left;
-  color: #fff;
+  color: #1f2933;
   @media (max-width: 760px) {
     margin-bottom: 20px;
   }
@@ -50,17 +50,22 @@ const TextArea = styled.textarea`
 
 const Button = styled.button`
   padding: 0.65em 1em;
-  background: #fec16d;
+  background: #7bc47f;
   border: 1px solid #d1d1d1;
   border-radius: 5px;
-  color: #000;
+  color: white;
   border: none;
   cursor: pointer;
   line-height: 1;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: bold;
   font-family: monospace;
   transition: all 0.2s ease;
+
+  :hover {
+    background-color: #57ae5b;
+  }
+
   @media (max-width: 512px) {
     margin-top: 8px;
   }
@@ -188,7 +193,7 @@ export default () => {
                     "Submitted"
                   )
                 ) : (
-                  "Submitting..."
+                  "Submitting"
                 )}
               </Button>
             </FormFlex>
@@ -196,7 +201,7 @@ export default () => {
           <br></br>
           {status.info.error && <Error>Error: {status.info.msg}</Error>}
           {!status.info.error && status.info.msg && (
-            <Message style={{ color: "white" }}>{status.info.msg}</Message>
+            <Message style={{ color: "#57AE5B", fontWeight: "bold", letterSpacing: "0.5px" }}>{status.info.msg}</Message>
           )}
         </MainForm>
       </FlexContainer>

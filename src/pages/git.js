@@ -21,23 +21,19 @@ const SEOKeywords = [
   "JavaScript",
   "CSS",
   "HTML",
-  "typescript",
-  "VS-Code",
 ];
 
 export default ({ data }) => {
   const { answers, handleSearchQuery } = useSearchBar(data);
-
   return (
     <LayoutLibrary>
       <SEO
-        title="VS-Code Answers"
+        title="GIT"
         description={SEODescription}
         keywords={SEOKeywords}
       />
       <PageTransition>
-        <SearchBar category="cms" handleSearchQuery={handleSearchQuery} />
-        {/* <AnswersHeader category="css" /> */}
+        <SearchBar category="css" handleSearchQuery={handleSearchQuery} />
         <AnswersIndexWrapper answers={answers} />
       </PageTransition>
     </LayoutLibrary>
@@ -45,11 +41,11 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query VSCODE_INDEX_QUERY {
+  query GIT_INDEX_QUERY {
     allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: {
-        frontmatter: { published: { eq: true }, category: { eq: "vs-code" } }
+        frontmatter: { published: { eq: true }, category: { eq: "git" } }
       }
     ) {
       nodes {
@@ -59,7 +55,6 @@ export const query = graphql`
           title
           date(formatString: "YYYY MMMM Do")
           category
-          author
         }
         fields {
           slug

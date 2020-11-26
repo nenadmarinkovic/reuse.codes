@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 import Form from "./Form";
 
 const FooterWrap = styled.footer`
-  background: #5e95c6;
+  background: #E4E7EB;
   padding-top: -300px;
 `;
 
@@ -27,7 +27,7 @@ const Copyright = styled.span`
   text-align: center;
   padding: 40px 0 15px;
   font-size: 13.3px;
-  color: white;
+  color: #1F2933;
 `;
 
 const FooterFlex = styled.div`
@@ -52,6 +52,7 @@ const FooterContainer = styled.div`
     width: 100%;
     & > p {
       font-size: 1em;
+      
     }
   }
 `;
@@ -67,10 +68,10 @@ const Footer = () => {
         </FooterFlex>
       </FooterContainer>
       <Copyright>
-        © {new Date().getFullYear()} Reuse. All rights reserved. <br></br>
-        Check out more projects on{" "}
+        © {new Date().getFullYear()} ♺ Reuse - Reusable code snippets. <br></br>
+        Design and development:{" "}
         <a
-          style={{ color: "white" }}
+          style={{ color: "#1F2933" }}
           target="_blank"
           href="https://nenadmarinkovic.vercel.app"
           rel="noreferrer"

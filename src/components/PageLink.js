@@ -10,7 +10,7 @@ const ShowMore = styled.div`
   font-family: monospace;
   font-weight: 600;
   margin-left: 5px;
-  color: #5e95c6;
+  color: #55AAD4;
   margin-left: 10px;
   visibility: hidden;
   opacity: 0;
@@ -44,7 +44,8 @@ const LinkBox = styled.div`
 
   @media (min-width: 48em) {
     & > h3 {
-      font-size: 1.3em;
+      font-size: 1em;
+      text-align: center;
     }
   }
 `;
@@ -61,7 +62,6 @@ const PageLink = ({ page, title }) => (
       <h3
         sx={{
           color: "black",
-          fontFamily: "Open Sans",
           fontWeight: "normal",
         }}
       >

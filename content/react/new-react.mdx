@@ -1,3 +1,15 @@
+---
+title: Setup JSX support in emmet
+date: 2020-01-17
+published: true
+category: react
+
+---
+import Text from '../../src/components/Text'
+
+AAA
+
+```js
 /** @jsx jsx */
 import { jsx } from "../context";
 import { graphql } from "gatsby";
@@ -27,13 +39,12 @@ export default ({ data }) => {
   return (
     <LayoutLibrary>
       <SEO
-        title="React Answers"
+        title="React"
         description={SEODescription}
         keywords={SEOKeywords}
       />
       <PageTransition>
         <SearchBar category="react" handleSearchQuery={handleSearchQuery} />
-        {/* <AnswersHeader category="react" /> */}
         <AnswersIndexWrapper answers={answers} />
       </PageTransition>
     </LayoutLibrary>
@@ -55,7 +66,6 @@ export const query = graphql`
           title
           date(formatString: "YYYY MMMM Do")
           category
-          author
         }
         fields {
           slug
@@ -64,3 +74,4 @@ export const query = graphql`
     }
   }
 `;
+```

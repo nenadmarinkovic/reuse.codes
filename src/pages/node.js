@@ -4,8 +4,8 @@ import { graphql } from "gatsby";
 import { LayoutLibrary } from "../components/LayoutLibrary";
 import AnswersIndexWrapper from "../components/AnswersIndexWrapper";
 import SEO from "gatsby-theme-seo/src/components/seo";
-import { useSearchBar } from "../useSearchBar";
 import SearchBar from "../components/SearchBar";
+import { useSearchBar } from "../useSearchBar";
 import PageTransition from "gatsby-plugin-page-transitions";
 
 const SEODescription = `
@@ -29,13 +29,12 @@ export default ({ data }) => {
   return (
     <LayoutLibrary>
       <SEO
-        title="HTML Answers"
+        title="Node"
         description={SEODescription}
         keywords={SEOKeywords}
       />
       <PageTransition>
-        <SearchBar category="css" handleSearchQuery={handleSearchQuery} />
-        {/* <AnswersHeader category="html" /> */}
+        <SearchBar category="node" handleSearchQuery={handleSearchQuery} />
         <AnswersIndexWrapper answers={answers} />
       </PageTransition>
     </LayoutLibrary>
@@ -43,11 +42,11 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query HTML_INDEX_QUERY {
+  query VSCODE_INDEX_QUERY {
     allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: {
-        frontmatter: { published: { eq: true }, category: { eq: "html" } }
+        frontmatter: { published: { eq: true }, category: { eq: "node" } }
       }
     ) {
       nodes {
@@ -57,7 +56,7 @@ export const query = graphql`
           title
           date(formatString: "YYYY MMMM Do")
           category
-          author
+          
         }
         fields {
           slug
