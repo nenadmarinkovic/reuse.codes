@@ -33,6 +33,14 @@ const DefaultLayout = ({ children }) => (
           font-family: 'Proxima Nova';
         }
 
+        html {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Proxima Nova";
+          text-decoration: none;
+        }
+
         * {
           margin: 0;
           padding: 0;
