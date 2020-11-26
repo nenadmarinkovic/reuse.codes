@@ -5,6 +5,11 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-mdx",
+    "gatsby-plugin-emotion",
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-robots-txt",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-preload-fonts",
     {
       resolve: "gatsby-theme-seo",
       options: {
@@ -95,10 +100,5 @@ module.exports = {
         icon: `src/images/favicon.png`,
       },
     },
-    "gatsby-plugin-emotion",
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-robots-txt",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-preload-fonts"
   ],
 };
