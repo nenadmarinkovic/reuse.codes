@@ -10,7 +10,8 @@
     "clean": "gatsby clean",
     "pretty-check": "prettier --check \"src/**/*.{js}\"",
     "pretty": "prettier --write \"src/**/*js\"",
-    "sitemap": "gatsby build && gatsby serve"
+    "sitemap": "gatsby build && gatsby serve",
+    "preload-fonts": "gatsby-preload-fonts"
   },
   "keywords": [
     "web development",
@@ -31,6 +32,7 @@
     "gatsby-plugin-manifest": "2.4.27",
     "gatsby-plugin-mdx": "^1.0.59",
     "gatsby-plugin-page-transitions": "^1.0.8",
+    "gatsby-plugin-preload-fonts": "^1.4.0",
     "gatsby-plugin-react-helmet": "3.3.10",
     "gatsby-plugin-robots-txt": "^1.5.0",
     "gatsby-plugin-sitemap": "^2.2.22",
