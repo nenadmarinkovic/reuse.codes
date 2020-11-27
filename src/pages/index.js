@@ -2,6 +2,7 @@
 import { jsx } from "../context";
 import { Layout } from "../components/Layout";
 import SEO from "gatsby-theme-seo/src/components/seo";
+import styles from "../styles/styles.css";
 
 const SEODescription = `
   Reusable code snippets for web developers and designers.
@@ -20,7 +21,6 @@ const SEOKeywords = [
 
 export default () => {
   return (
-
     <Layout>
       <SEO
         title="Reusable code snippets for web developers and designers."
@@ -28,6 +28,5 @@ export default () => {
         keywords={SEOKeywords}
       />
     </Layout>
-
   );
 };
