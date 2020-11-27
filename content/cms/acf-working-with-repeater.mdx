@@ -1,0 +1,33 @@
+---
+title: WP | ACF - Working with the Repeater Field
+date: 2020-02-06
+published: true
+category: cms
+
+---
+
+ACF - Working with the Repeater Field.
+
+```php
+<?php if( have_rows('repeater_field_name') ): ?>
+ 
+    <ul>
+ 
+    <?php while( have_rows('repeater_field_name') ): the_row(); ?>
+ 
+        <li>sub_field_1 = <?php the_sub_field('sub_field_1'); ?>, sub_field_2 = <?php the_sub_field('sub_field_2'); ?>, etc</li>
+        
+        <?php 
+        
+        $sub_field_3 = get_sub_field('sub_field_3'); 
+        
+        // do something with $sub_field_3
+        
+        ?>
+        
+    <?php endwhile; ?>
+ 
+    </ul>
+ 
+<?php endif; ?>
+```

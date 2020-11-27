@@ -40,15 +40,14 @@ export default () => {
       <PageTransition>
         <Categories>
           <PageLink page="html" title="HTML and markup languages" />
-          <PageLink page="css" title="CSS and CSS-in-JS solutions" />
+          <PageLink page="css" title="CSS" />
           <PageLink page="sass" title="Sass and Less" />
           <PageLink page="javascript" title="JavaScript" />
           <PageLink page="node" title="Node and Express" />
           <PageLink page="react" title="React" />
-          <PageLink page="git" title="Git and Github" />
           <PageLink page="cms" title="Content Management Systems" />
+          <PageLink page="git" title="Git and Github" />
         </Categories>
-    
       </PageTransition>
     </LayoutLibrary>
   );

@@ -5,7 +5,7 @@ import styled from "@emotion/styled";
 const Wrapper = styled.div`
   padding: 2em;
   width: 100%;
-  height: 100%;
+  height: 200px;
   border-radius: 5px;
   display: flex;
   background-color: #e8edf3;
@@ -16,6 +16,13 @@ const Wrapper = styled.div`
 
   &:hover {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  }
+
+  & > p {
+    padding-top: 0.5em;
+    font-size: 0.85em;
+    font-weight: 300;
+    margin-top: 18px;
   }
 
   & > h1 {
@@ -33,6 +40,7 @@ const Wrapper = styled.div`
       padding-top: 0.5em;
       font-size: 0.85em;
       font-weight: 300;
+      margin-top: 18px;
     }
   }
 `;

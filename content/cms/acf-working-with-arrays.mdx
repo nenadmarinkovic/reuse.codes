@@ -1,0 +1,31 @@
+---
+title: WP | ACF - Working with Array values
+date: 2020-02-06
+published: true
+category: cms
+
+---
+
+ACF - Working with Array values.
+
+```php
+<?php
+
+$values = get_field('field_name');
+if($values)
+{
+	echo '<ul>';
+
+	foreach($values as $value)
+	{
+		echo '<li>' . $value . '</li>';
+	}
+
+	echo '</ul>';
+}
+
+// always good to see exactly what you are working with
+var_dump($values);
+
+?>
+```

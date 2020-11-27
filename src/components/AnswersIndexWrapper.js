@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 
 const Wrapper = styled.main`
   display: grid;
-  grid-auto-rows: 150px;
+  grid-auto-rows: 200px;
   padding-bottom: 2em;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1em;
@@ -31,7 +31,7 @@ const AnswersIndexWrapper = ({ answers }) => (
         to={fields.slug}
       >
         <PostWrapper>
-          <h1>{frontmatter.title}</h1>
+          <h1 style={{height: "60px"}}>{frontmatter.title}</h1>
           <p>{frontmatter.date}</p>
           <Category>{frontmatter.category}</Category>
         </PostWrapper>

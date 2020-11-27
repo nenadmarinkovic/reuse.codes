@@ -47,6 +47,11 @@
     font-weight: bold;
   }
 
+  p {
+    line-height: 2;
+    font-size: 18px;
+  }
+
   body {
     scroll-behavior: smooth;
     overflow-y: scroll;
@@ -57,4 +62,5 @@
 
   .prism-code {
       margin-top: 60px;
+      margin-bottom: 60px;
   }

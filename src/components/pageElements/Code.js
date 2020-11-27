@@ -38,6 +38,7 @@ const CopyCode = styled.button`
   opacity: 0.3;
   &:hover {
     opacity: 1;
+    cursor: pointer;
   }
 `;
 
