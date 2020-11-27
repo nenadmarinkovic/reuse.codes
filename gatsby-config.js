@@ -1,99 +1,88 @@
 module.exports = {
   siteMetadata: {
-    title: "♺ Reuse",
-    description: "Reusable code snippets for web developers and designers.",
+    title: `♺ Reuse`,
+    description: `Reusable code snippets for web developers and designers.`,
   },
   plugins: [
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-emotion",
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-robots-txt",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-preload-fonts",
+    `gatsby-plugin-mdx`,
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: `gatsby-theme-seo`,
       options: {
-        custom: {
-          families: ["Proxima Nova"],
-          urls: ["/fonts"],
-        },
-      },
-    },
-    {
-      resolve: "gatsby-theme-seo",
-      options: {
-        title: "Reuse",
-        description: "Reusable code snippets for web developers and designers.",
-        author: "Nenad Marinkovic",
-        siteUrl: "https://reuse.codes",
+        title: `Reuse`,
+        description: `Reusable code snippets for web developers and designers.`,
+        author: `Nenad Marinkovic`,
+        siteUrl: `https://reuse.codes`,
         icon: `src/images/favicon.png`,
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "pages",
+        name: `pages`,
         path: `${__dirname}/src/pages/`,
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/html`,
-        name: "html",
+        name: `html`,
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/css`,
-        name: "css",
+        name: `css`,
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/react`,
-        name: "react",
+        name: `react`,
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/git`,
-        name: "git",
+        name: `git`,
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/javascript`,
-        name: "javascript",
+        name: `javascript`,
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/cms`,
-        name: "cms",
+        name: `cms`,
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/sass`,
-        name: "sass",
+        name: `sass`,
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/node`,
-        name: "node",
+        name: `node`,
       },
     },
     {
-      resolve: "gatsby-plugin-page-transitions",
+      resolve: `gatsby-plugin-page-transitions`,
       options: {
         transitionTime: 400,
       },

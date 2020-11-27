@@ -2,7 +2,6 @@
 import { jsx } from "../context";
 import { Layout } from "../components/Layout";
 import SEO from "gatsby-theme-seo/src/components/seo";
-import Fade from "react-reveal/Fade"
 
 const SEODescription = `
   Reusable code snippets for web developers and designers.
@@ -21,7 +20,7 @@ const SEOKeywords = [
 
 export default () => {
   return (
-    <Fade>
+
     <Layout>
       <SEO
         title="Reusable code snippets for web developers and designers."
@@ -29,6 +28,6 @@ export default () => {
         keywords={SEOKeywords}
       />
     </Layout>
-    </Fade>
+
   );
 };
