@@ -4,9 +4,9 @@ import React from "react";
 import styled from "@emotion/styled";
 import { useSiteMetadata } from "../useSiteMetadata";
 import { Header } from "./Header";
-import DefaultLayout from "./DefautLayout";
 import Footer from "./Footer";
 import { Link } from "gatsby";
+import styles from "../styles/styles.css";
 
 const LayoutContainer = styled.div`
   @media (min-width: 48em) {
@@ -70,7 +70,7 @@ const Title = styled.div`
 export const LayoutLibrary = ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (
-    <DefaultLayout>
+ <>
       <TopHeader>
         <Container>
           <FlexHeader>
@@ -101,6 +101,6 @@ export const LayoutLibrary = ({ children }) => {
         </React.Fragment>
       </LayoutContainer>
       <Footer />
-    </DefaultLayout>
+   </>
   );
 };
