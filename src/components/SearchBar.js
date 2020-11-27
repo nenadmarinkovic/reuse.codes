@@ -20,13 +20,13 @@ const SearchBar = ({ category, handleSearchQuery }) => {
     <SearchBarContainer>
       <Input
         sx={{
-          fontFamily: "body",
           padding: "1em",
           border: "1px solid #eaeaea",
           background: "transparent",
           color: "black",
           outline: "none",
           width: "300px",
+          fontFamily: "Proxima Nova",
         }}
         type="text"
         id={`${category}-answers`}

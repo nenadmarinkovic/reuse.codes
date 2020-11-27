@@ -54,3 +54,7 @@
     height: 100%;
     background-color: #f5f7fa;
   }
+
+  .prism-code {
+      margin-top: 60px;
+  }

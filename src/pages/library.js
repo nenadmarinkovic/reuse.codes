@@ -5,6 +5,7 @@ import { LayoutLibrary } from "../components/LayoutLibrary";
 import PageLink from "../components/PageLink";
 import SEO from "gatsby-theme-seo/src/components/seo";
 import PageTransition from "gatsby-plugin-page-transitions";
+import styles from "../styles/styles.css";
 
 const SEODescription = `
 Reusable code snippets.
