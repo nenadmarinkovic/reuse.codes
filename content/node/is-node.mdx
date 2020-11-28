@@ -1,0 +1,19 @@
+---
+title: Is Node?
+date: 2020-01-17
+published: true
+category: node
+
+---
+Determines if the current runtime environment is Node.js.
+
+
+```js
+const isNode = () =>
+  typeof process !== 'undefined' &&
+  process.versions !== null &&
+  process.versions.node !== null;
+
+isNode(); // true (Node)
+isNode(); // false (browser)
+```

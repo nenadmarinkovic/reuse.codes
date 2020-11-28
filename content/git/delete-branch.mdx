@@ -1,0 +1,12 @@
+---
+title: Undo
+date: 2020-09-06
+published: true
+category: git
+
+---
+If you made a commit you want to change, use reset it resets the pointer for the entire repository back to that moment. You can use reset with a hash or ~ back from head. This example would move back two commits:
+
+```bash
+git reset --hard HEAD~2
+```

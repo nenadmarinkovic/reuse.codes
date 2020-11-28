@@ -72,7 +72,7 @@ function Details() {
   return (
     <Container>
       <DetailsTitle>
-        Lorem ipsum dolor sit amet, consectetur adipiscing
+      Reuse makes storing and managing repeating code patterns easy and trasparent.
       </DetailsTitle>
       <FlexHeader>
         <FlexItem>

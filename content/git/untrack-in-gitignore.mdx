@@ -1,0 +1,15 @@
+---
+title: Untrack in .gitignore
+date: 2020-10-08
+published: true
+category: git
+
+---
+Un-track files that have just been declared in .gitignore:
+
+```bash
+git rm -r --cached .
+git add .
+git commit -am "Remove ignored files"
+
+```

@@ -1,0 +1,58 @@
+---
+title: Collapse
+date: 2020-01-17
+published: true
+category: react
+
+---
+Renders a component with collapsible content.
+
+
+
+```css
+.collapse-button {
+  display: block;
+  width: 100%;
+}
+
+.collapse-content.collapsed {
+  display: none;
+}
+
+.collapsed-content.expanded {
+  display: block;
+}
+
+```
+
+```js
+const Collapse = ({ collapsed, children }) => {
+  const [isCollapsed, setIsCollapsed] = React.useState(collapsed);
+
+  return (
+    <>
+      <button
+        className="collapse-button"
+        onClick={() => setIsCollapsed(!isCollapsed)}
+      >
+        {isCollapsed ? 'Show' : 'Hide'} content
+      </button>
+      <div
+        className={`collapse-content ${isCollapsed ? 'collapsed' : 'expanded'}`}
+        aria-expanded={isCollapsed}
+      >
+        {children}
+      </div>
+    </>
+  );
+};
+EXAMPLES
+ReactDOM.render(
+  <Collapse>
+    <h1>This is a collapse</h1>
+    <p>Hello world!</p>
+  </Collapse>,
+  document.getElementById('root')
+);
+
+```

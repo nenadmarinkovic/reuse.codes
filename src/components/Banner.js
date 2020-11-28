@@ -4,7 +4,7 @@ import { keyframes } from "@emotion/core";
 import { Link } from "gatsby";
 
 const Header = styled.div`
-  background: #323F4B;
+  background: #323f4b;
   color: white;
   height: 55px;
   position: fixed;
@@ -53,7 +53,7 @@ const TitleSub = styled.div`
   font-size: 14px;
   color: white;
   text-decoration: none;
-letter-spacing: .5px;
+  letter-spacing: 0.5px;
 `;
 
 const SVG = styled.svg`
@@ -65,7 +65,7 @@ const SVG = styled.svg`
 `;
 
 const Text = styled.div`
-  color: #323F4B;
+  color: #323f4b;
   width: 45%;
   @media (max-width: 960px) {
     width: 100%;
@@ -80,7 +80,7 @@ const Text = styled.div`
 const H1 = styled.h1`
   font-weight: 800;
   font-size: 71px;
-  color: #323F4B;
+  color: #323f4b;
   @media (max-width: 960px) {
     font-size: 51px;
   }
@@ -93,7 +93,7 @@ const H5 = styled.h5`
   margin-top: 20px;
   font-weight: 500;
   font-size: 21px;
-  color: #323F4B;
+  color: #323f4b;
   line-height: 1.8;
   @media (max-width: 512px) {
     font-size: 16px;
@@ -104,7 +104,7 @@ const Button = styled.button`
   width: 260px;
   height: 60px;
   margin-top: 40px;
-  background: #7BC47F;
+  background: #7bc47f;
   border: none;
   color: white;
   text-decoration: none;
@@ -116,13 +116,12 @@ const Button = styled.button`
   font-weight: bold;
 
   :hover {
-    background-color: #57AE5B;
+    background-color: #57ae5b;
   }
 
   @media (max-width: 512px) {
-   width: 220px;
+    width: 220px;
   }
-
 `;
 
 const spin1 = keyframes`
@@ -218,7 +217,7 @@ function Banner() {
           <FlexHeader>
             <Title>
               <Link style={{ color: "white" }} to="/">
-              ♺ Reuse
+                ♺ Reuse
               </Link>
             </Title>
             <TitleSub>
@@ -240,8 +239,8 @@ function Banner() {
             <Text>
               <H1>Reusable code snippets</H1>
               <H5>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+                Web application for managing code snippets. Reuse is free and open
+                source, fast in every way that matters, and secure by default.
               </H5>
               <Link to="/library">
                 <Button>Go to Library →</Button>

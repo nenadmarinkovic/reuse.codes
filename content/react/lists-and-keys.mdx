@@ -1,0 +1,34 @@
+---
+title: Lists and Keys
+date: 2020-01-17
+published: true
+category: react
+---
+
+Use .map() to convert lists of data (arrays) into lists of elements:
+
+
+```js
+const people = ["John", "Bob", "Fred"];
+const peopleList = people.map(person => <p>{person}</p>);
+
+```
+
+```js
+function App() {
+  const people = ['John', 'Bob', 'Fred'];
+  // can interpolate returned list of elements in {}
+  return (
+    <ul>
+      {/* we're passing each array element as props */}
+      {people.map(person => <Person name={person} />}
+    </ul>
+  );
+}
+
+function Person({ name }) {
+  // gets 'name' prop using object destructuring
+  return <p>this person's name is: {name}</p>;
+}
+
+```

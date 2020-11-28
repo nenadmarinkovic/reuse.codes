@@ -1,0 +1,14 @@
+---
+title: Complete Reset Local to Remote
+date: 2020-09-06
+published: true
+category: git
+
+---
+If you have a commit you want to reverse but not change the entire repository back to that point, you can use diff or revert.
+
+
+```bash
+git fetch REMOTE
+git reset --hard REMOTE/BRANCH
+```
