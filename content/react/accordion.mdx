@@ -3,8 +3,8 @@ title: React Accordion
 date: 2020-11-17
 published: true
 category: react
-
 ---
+
 Renders an accordion menu with multiple collapsible content elements.
 
 ```css
@@ -38,7 +38,7 @@ const AccordionItem = ({ label, isCollapsed, handleClick, children }) => {
     </>
   );
 };
-//
+
 const Accordion = ({ defaultIndex, onItemClick, children }) => {
   const [bindIndex, setBindIndex] = React.useState(defaultIndex);
 
@@ -73,5 +73,4 @@ ReactDOM.render(
   </Accordion>,
   document.getElementById('root')
 );
-
 ```
