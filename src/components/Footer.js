@@ -73,7 +73,7 @@ const Footer = () => {
         <a
           style={{ color: "#1F2933" }}
           target="_blank"
-          href="https://nenadmarinkovic.vercel.app"
+          href="https://nenadmarinkovic.com"
           rel="noreferrer"
         >
           nenadmarinkovic.com

@@ -425,6 +425,27 @@ exports.wrapRootElement = true;
 
 /***/ }),
 
+/***/ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/31e3dc61081b4a365a7868dd2aceb045.js":
+/*!********************************************************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/31e3dc61081b4a365a7868dd2aceb045.js ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _src_components_Text__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../src/components/Text */ "./src/components/Text.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  Text: _src_components_Text__WEBPACK_IMPORTED_MODULE_0__["default"],
+  React: react__WEBPACK_IMPORTED_MODULE_1__
+});
+
+/***/ }),
+
 /***/ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js":
 /*!********************************************************************************************!*\
   !*** ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js ***!
@@ -4866,6 +4887,237 @@ exports.resolve = resolve;
 exports.insertParams = insertParams;
 exports.validateRedirect = validateRedirect;
 exports.shallowCompare = shallowCompare;
+
+/***/ }),
+
+/***/ "./node_modules/@styled-system/css/dist/index.esm.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@styled-system/css/dist/index.esm.js ***!
+  \***********************************************************/
+/*! exports provided: get, responsive, css, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "get", function() { return get; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "responsive", function() { return responsive; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "css", function() { return css; });
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+// based on https://github.com/developit/dlv
+var get = function get(obj, key, def, p, undef) {
+  key = key && key.split ? key.split('.') : [key];
+
+  for (p = 0; p < key.length; p++) {
+    obj = obj ? obj[key[p]] : undef;
+  }
+
+  return obj === undef ? def : obj;
+};
+var defaultBreakpoints = [40, 52, 64].map(function (n) {
+  return n + 'em';
+});
+var defaultTheme = {
+  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72]
+};
+var aliases = {
+  bg: 'backgroundColor',
+  m: 'margin',
+  mt: 'marginTop',
+  mr: 'marginRight',
+  mb: 'marginBottom',
+  ml: 'marginLeft',
+  mx: 'marginX',
+  my: 'marginY',
+  p: 'padding',
+  pt: 'paddingTop',
+  pr: 'paddingRight',
+  pb: 'paddingBottom',
+  pl: 'paddingLeft',
+  px: 'paddingX',
+  py: 'paddingY'
+};
+var multiples = {
+  marginX: ['marginLeft', 'marginRight'],
+  marginY: ['marginTop', 'marginBottom'],
+  paddingX: ['paddingLeft', 'paddingRight'],
+  paddingY: ['paddingTop', 'paddingBottom'],
+  size: ['width', 'height']
+};
+var scales = {
+  color: 'colors',
+  backgroundColor: 'colors',
+  borderColor: 'colors',
+  margin: 'space',
+  marginTop: 'space',
+  marginRight: 'space',
+  marginBottom: 'space',
+  marginLeft: 'space',
+  marginX: 'space',
+  marginY: 'space',
+  padding: 'space',
+  paddingTop: 'space',
+  paddingRight: 'space',
+  paddingBottom: 'space',
+  paddingLeft: 'space',
+  paddingX: 'space',
+  paddingY: 'space',
+  top: 'space',
+  right: 'space',
+  bottom: 'space',
+  left: 'space',
+  gridGap: 'space',
+  gridColumnGap: 'space',
+  gridRowGap: 'space',
+  gap: 'space',
+  columnGap: 'space',
+  rowGap: 'space',
+  fontFamily: 'fonts',
+  fontSize: 'fontSizes',
+  fontWeight: 'fontWeights',
+  lineHeight: 'lineHeights',
+  letterSpacing: 'letterSpacings',
+  border: 'borders',
+  borderTop: 'borders',
+  borderRight: 'borders',
+  borderBottom: 'borders',
+  borderLeft: 'borders',
+  borderWidth: 'borderWidths',
+  borderStyle: 'borderStyles',
+  borderRadius: 'radii',
+  borderTopRightRadius: 'radii',
+  borderTopLeftRadius: 'radii',
+  borderBottomRightRadius: 'radii',
+  borderBottomLeftRadius: 'radii',
+  borderTopWidth: 'borderWidths',
+  borderTopColor: 'colors',
+  borderTopStyle: 'borderStyles',
+  borderBottomWidth: 'borderWidths',
+  borderBottomColor: 'colors',
+  borderBottomStyle: 'borderStyles',
+  borderLeftWidth: 'borderWidths',
+  borderLeftColor: 'colors',
+  borderLeftStyle: 'borderStyles',
+  borderRightWidth: 'borderWidths',
+  borderRightColor: 'colors',
+  borderRightStyle: 'borderStyles',
+  outlineColor: 'colors',
+  boxShadow: 'shadows',
+  textShadow: 'shadows',
+  zIndex: 'zIndices',
+  width: 'sizes',
+  minWidth: 'sizes',
+  maxWidth: 'sizes',
+  height: 'sizes',
+  minHeight: 'sizes',
+  maxHeight: 'sizes',
+  flexBasis: 'sizes',
+  size: 'sizes',
+  // svg
+  fill: 'colors',
+  stroke: 'colors'
+};
+
+var positiveOrNegative = function positiveOrNegative(scale, value) {
+  if (typeof value !== 'number' || value >= 0) {
+    return get(scale, value, value);
+  }
+
+  var absolute = Math.abs(value);
+  var n = get(scale, absolute, absolute);
+  if (typeof n === 'string') return '-' + n;
+  return n * -1;
+};
+
+var transforms = ['margin', 'marginTop', 'marginRight', 'marginBottom', 'marginLeft', 'marginX', 'marginY', 'top', 'bottom', 'left', 'right'].reduce(function (acc, curr) {
+  var _extends2;
+
+  return _extends({}, acc, (_extends2 = {}, _extends2[curr] = positiveOrNegative, _extends2));
+}, {});
+var responsive = function responsive(styles) {
+  return function (theme) {
+    var next = {};
+    var breakpoints = get(theme, 'breakpoints', defaultBreakpoints);
+    var mediaQueries = [null].concat(breakpoints.map(function (n) {
+      return "@media screen and (min-width: " + n + ")";
+    }));
+
+    for (var key in styles) {
+      var value = typeof styles[key] === 'function' ? styles[key](theme) : styles[key];
+      if (value == null) continue;
+
+      if (!Array.isArray(value)) {
+        next[key] = value;
+        continue;
+      }
+
+      for (var i = 0; i < value.slice(0, mediaQueries.length).length; i++) {
+        var media = mediaQueries[i];
+
+        if (!media) {
+          next[key] = value[i];
+          continue;
+        }
+
+        next[media] = next[media] || {};
+        if (value[i] == null) continue;
+        next[media][key] = value[i];
+      }
+    }
+
+    return next;
+  };
+};
+var css = function css(args) {
+  return function (props) {
+    if (props === void 0) {
+      props = {};
+    }
+
+    var theme = _extends({}, defaultTheme, {}, props.theme || props);
+
+    var result = {};
+    var obj = typeof args === 'function' ? args(theme) : args;
+    var styles = responsive(obj)(theme);
+
+    for (var key in styles) {
+      var x = styles[key];
+      var val = typeof x === 'function' ? x(theme) : x;
+
+      if (key === 'variant') {
+        var variant = css(get(theme, val))(theme);
+        result = _extends({}, result, {}, variant);
+        continue;
+      }
+
+      if (val && typeof val === 'object') {
+        result[key] = css(val)(theme);
+        continue;
+      }
+
+      var prop = get(aliases, key, key);
+      var scaleName = get(scales, prop);
+      var scale = get(theme, scaleName, get(theme, prop, {}));
+      var transform = get(transforms, prop, get);
+      var value = transform(scale, val, val);
+
+      if (multiples[prop]) {
+        var dirs = multiples[prop];
+
+        for (var i = 0; i < dirs.length; i++) {
+          result[dirs[i]] = value;
+        }
+      } else {
+        result[prop] = value;
+      }
+    }
+
+    return result;
+  };
+};
+/* harmony default export */ __webpack_exports__["default"] = (css);
+
 
 /***/ }),
 
@@ -17428,9 +17680,11 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var scope_0 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js").default;
+var scope_0 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/31e3dc61081b4a365a7868dd2aceb045.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/31e3dc61081b4a365a7868dd2aceb045.js").default;
 
-/* harmony default export */ __webpack_exports__["default"] = (Object.assign({}, scope_0));
+var scope_1 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js").default;
+
+/* harmony default export */ __webpack_exports__["default"] = (Object.assign({}, scope_0, scope_1));
 
 /***/ }),
 
@@ -18803,6 +19057,108 @@ var invariant = function(condition, format, a, b, c, d, e, f) {
 };
 
 module.exports = invariant;
+
+
+/***/ }),
+
+/***/ "./node_modules/isolated-theme-ui/index.js":
+/*!*************************************************!*\
+  !*** ./node_modules/isolated-theme-ui/index.js ***!
+  \*************************************************/
+/*! exports provided: mdxPragma, jsxPragma */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _mdx_pragma__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mdx-pragma */ "./node_modules/isolated-theme-ui/mdx-pragma.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "mdxPragma", function() { return _mdx_pragma__WEBPACK_IMPORTED_MODULE_0__["mdxPragma"]; });
+
+/* harmony import */ var _pragma__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pragma */ "./node_modules/isolated-theme-ui/pragma.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "jsxPragma", function() { return _pragma__WEBPACK_IMPORTED_MODULE_1__["pragma"]; });
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/isolated-theme-ui/mdx-pragma.js":
+/*!******************************************************!*\
+  !*** ./node_modules/isolated-theme-ui/mdx-pragma.js ***!
+  \******************************************************/
+/*! exports provided: mdxPragma */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mdxPragma", function() { return mdxPragma; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mdx-js/react */ "./node_modules/@mdx-js/react/dist/esm.js");
+
+
+
+// mdxPragma is an mdx pragma replacement that 
+// allows users to isolate the set of components
+// used via custom context
+// 
+// It is a passthrough to the @mdx-js/react pragma
+const mdxPragma = context => (type, props, ...children) => {
+    const { components } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(context);
+    return _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__["mdx"].apply(undefined, [
+      type,
+      { ...props, components },
+      ...children
+    ]);
+  };
+
+/***/ }),
+
+/***/ "./node_modules/isolated-theme-ui/pragma.js":
+/*!**************************************************!*\
+  !*** ./node_modules/isolated-theme-ui/pragma.js ***!
+  \**************************************************/
+/*! exports provided: pragma */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pragma", function() { return pragma; });
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.esm.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _styled_system_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @styled-system/css */ "./node_modules/@styled-system/css/dist/index.esm.js");
+
+
+
+
+const getCSS = (props, theme) => {
+  if (!props.sx && !props.css) return undefined;
+
+  const styles = Object(_styled_system_css__WEBPACK_IMPORTED_MODULE_2__["default"])(props.sx)(theme);
+  const raw = typeof props.css === "function" ? props.css(theme) : props.css;
+  return [styles, raw];
+};
+
+const parseProps = (props, theme) => {
+  if (!props) return null;
+  const next = {};
+  for (let key in props) {
+    if (key === "sx") continue;
+    next[key] = props[key];
+  }
+  const css = getCSS(props, theme);
+  if (css) next.css = css;
+  return next;
+};
+
+const pragma = context => (type, props, ...children) => {
+  const theme = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(context);
+  return _emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"].apply(undefined, [
+    type,
+    parseProps(props, theme),
+    ...children
+  ]);
+};
 
 
 /***/ }),
@@ -66122,6 +66478,55 @@ var wrapRootElement = function wrapRootElement(_ref2) {
 
 /***/ }),
 
+/***/ "./src/components/Text.js":
+/*!********************************!*\
+  !*** ./src/components/Text.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/styled-base */ "./node_modules/@emotion/styled-base/dist/styled-base.esm.js");
+/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../context */ "./src/context.js");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.esm.js");
+
+
+function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
+
+/** @jsx jsx */
+
+
+
+var Container = Object(_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__["default"])("div", {
+  target: "eh0wf3w0",
+  label: "Container"
+})( false ? undefined : {
+  name: "n4n7zb",
+  styles: "overflow-wrap:break-word;width:100%;",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9OZW5hZC9XZWIgRGV2ZWxvcG1lbnQvcmV1c2UuY29kZXMvc3JjL2NvbXBvbmVudHMvVGV4dC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFJNEIiLCJmaWxlIjoiL1VzZXJzL05lbmFkL1dlYiBEZXZlbG9wbWVudC9yZXVzZS5jb2Rlcy9zcmMvY29tcG9uZW50cy9UZXh0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiLyoqIEBqc3gganN4ICovXG5pbXBvcnQgeyBqc3ggfSBmcm9tIFwiLi4vY29udGV4dFwiO1xuaW1wb3J0IHN0eWxlZCBmcm9tIFwiQGVtb3Rpb24vc3R5bGVkXCI7XG5cbmNvbnN0IENvbnRhaW5lciA9IHN0eWxlZC5kaXZgXG4gIG92ZXJmbG93LXdyYXA6IGJyZWFrLXdvcmQ7XG4gIHdpZHRoOiAxMDAlO1xuYDtcblxuY29uc3QgUGFyYWdyYXBoVGV4dCA9IHN0eWxlZC5wYFxuICBwYWRkaW5nOiAyZW0gMDtcbiAgZm9udC1zaXplOiAxLjFlbTtcbiAgbGluZS1oZWlnaHQ6IDIuMztcbmA7XG5cbmNvbnN0IFRleHQgPSAoeyBjaGlsZHJlbiB9KSA9PiAoXG4gIDxDb250YWluZXI+XG4gICAgPFBhcmFncmFwaFRleHQ+e2NoaWxkcmVufTwvUGFyYWdyYXBoVGV4dD5cbiAgPC9Db250YWluZXI+XG4pO1xuXG5leHBvcnQgZGVmYXVsdCBUZXh0O1xuIl19 */",
+  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+});
+
+var ParagraphText = Object(_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__["default"])("p", {
+  target: "eh0wf3w1",
+  label: "ParagraphText"
+})( false ? undefined : {
+  name: "5qjfie",
+  styles: "padding:2em 0;font-size:1.1em;line-height:2.3;",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9OZW5hZC9XZWIgRGV2ZWxvcG1lbnQvcmV1c2UuY29kZXMvc3JjL2NvbXBvbmVudHMvVGV4dC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFTOEIiLCJmaWxlIjoiL1VzZXJzL05lbmFkL1dlYiBEZXZlbG9wbWVudC9yZXVzZS5jb2Rlcy9zcmMvY29tcG9uZW50cy9UZXh0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiLyoqIEBqc3gganN4ICovXG5pbXBvcnQgeyBqc3ggfSBmcm9tIFwiLi4vY29udGV4dFwiO1xuaW1wb3J0IHN0eWxlZCBmcm9tIFwiQGVtb3Rpb24vc3R5bGVkXCI7XG5cbmNvbnN0IENvbnRhaW5lciA9IHN0eWxlZC5kaXZgXG4gIG92ZXJmbG93LXdyYXA6IGJyZWFrLXdvcmQ7XG4gIHdpZHRoOiAxMDAlO1xuYDtcblxuY29uc3QgUGFyYWdyYXBoVGV4dCA9IHN0eWxlZC5wYFxuICBwYWRkaW5nOiAyZW0gMDtcbiAgZm9udC1zaXplOiAxLjFlbTtcbiAgbGluZS1oZWlnaHQ6IDIuMztcbmA7XG5cbmNvbnN0IFRleHQgPSAoeyBjaGlsZHJlbiB9KSA9PiAoXG4gIDxDb250YWluZXI+XG4gICAgPFBhcmFncmFwaFRleHQ+e2NoaWxkcmVufTwvUGFyYWdyYXBoVGV4dD5cbiAgPC9Db250YWluZXI+XG4pO1xuXG5leHBvcnQgZGVmYXVsdCBUZXh0O1xuIl19 */",
+  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+});
+
+var Text = function Text(_ref) {
+  var children = _ref.children;
+  return Object(_context__WEBPACK_IMPORTED_MODULE_1__["jsx"])(Container, null, Object(_context__WEBPACK_IMPORTED_MODULE_1__["jsx"])(ParagraphText, null, children));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Text);
+
+/***/ }),
+
 /***/ "./src/components/pageElements/Code.js":
 /*!*********************************************!*\
   !*** ./src/components/pageElements/Code.js ***!
@@ -66229,6 +66634,32 @@ var Code = function Code(_ref) {
     }));
   });
 };
+
+/***/ }),
+
+/***/ "./src/context.js":
+/*!************************!*\
+  !*** ./src/context.js ***!
+  \************************/
+/*! exports provided: MyThemeContext, jsx, mdx */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyThemeContext", function() { return MyThemeContext; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "jsx", function() { return jsx; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mdx", function() { return mdx; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var isolated_theme_ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! isolated-theme-ui */ "./node_modules/isolated-theme-ui/index.js");
+/** @jsx jsx */
+
+
+var MyThemeContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext({
+  components: {}
+});
+var jsx = Object(isolated_theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsxPragma"])(MyThemeContext);
+var mdx = Object(isolated_theme_ui__WEBPACK_IMPORTED_MODULE_1__["mdxPragma"])(MyThemeContext);
 
 /***/ }),
 
