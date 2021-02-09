@@ -142,7 +142,7 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-manifest/gatsby-ssr */ "./node_modules/gatsby-plugin-manifest/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "name": "♺ Reuse",
+    "name": "Reuse",
     "short_name": "Reuse",
     "start_url": "/",
     "background_color": "#f7f0eb",

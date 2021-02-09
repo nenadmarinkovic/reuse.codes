@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `♺ Reuse`,
+    title: `Reuse`,
     description: `Reusable code snippets for web developers and designers.`,
   },
   plugins: [
@@ -90,7 +90,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `♺ Reuse`,
+        name: `Reuse`,
         short_name: `Reuse`,
         start_url: `/`,
         background_color: `#f7f0eb`,

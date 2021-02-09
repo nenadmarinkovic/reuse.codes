@@ -76,7 +76,7 @@ export const LayoutLibrary = ({ children }) => {
           <FlexHeader>
             <Title>
               <Link style={{ color: "white" }} to="/">
-                ♺ Reuse
+                Reuse
               </Link>
             </Title>
             <TitleSub>

@@ -68,7 +68,7 @@ const Footer = () => {
         </FooterFlex>
       </FooterContainer>
       <Copyright>
-        © {new Date().getFullYear()} ♺ Reuse - Reusable code snippets. <br></br>
+        © {new Date().getFullYear()} Reuse - Reusable code snippets. <br></br>
         Design and development:{" "}
         <a
           style={{ color: "#1F2933" }}

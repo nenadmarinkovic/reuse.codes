@@ -217,7 +217,7 @@ function Banner() {
           <FlexHeader>
             <Title>
               <Link style={{ color: "white" }} to="/">
-                ♺ Reuse
+                Reuse
               </Link>
             </Title>
             <TitleSub>
