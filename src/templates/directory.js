@@ -33,7 +33,7 @@ const DateAndCategory = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
 
   @media (max-width: 765px) {
     height: 80px;
