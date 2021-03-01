@@ -37,10 +37,14 @@ const DateAndCategory = styled.div`
 
   @media (max-width: 765px) {
     height: 80px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
   }
 
   & > p {
     font-size: 15px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: 48em) {
@@ -85,7 +89,8 @@ export default ({ data }) => {
                 }}
                 to={`/${category}`}
               >
-                Category: <span style={{textTransform: "uppercase"}}>{category}</span>
+                Category:{" "}
+                <span style={{ textTransform: "uppercase" }}>{category}</span>
               </Link>
             </p>
             <p
