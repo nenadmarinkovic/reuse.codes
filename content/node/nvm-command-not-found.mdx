@@ -1,0 +1,27 @@
+---
+title: If nvm doesn't load every time in the terminal (command not found)
+date: 2021-03-01
+published: true
+category: node
+---
+
+If there is an 'nvm not found error' whenever new terminal is opened, just follow this instructions.
+
+```bash
+➜  ~ nvm --version
+zsh: command not found: nvm
+```
+
+Than load .bash_profile
+
+```bash
+code ~/.bash_profile
+```
+
+Than write this code inside:
+
+```bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+```
