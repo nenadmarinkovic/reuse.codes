@@ -1,0 +1,15 @@
+---
+title: Ignore .DS_Store in all repositories
+date: 2021-03-01
+published: true
+category: git
+
+---
+
+Ignore .DS_Store file in all repositories.
+
+```bash
+git rm --cached .DS_Store
+echo .DS_Store >> ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
+```
