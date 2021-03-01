@@ -40,18 +40,19 @@ const DateAndCategory = styled.div`
     flex-direction: column;
     justify-content: start;
     align-items: start;
+    margin-top: 30px;
   }
 
   & > p {
     font-size: 15px;
     margin-bottom: 20px;
-    margin-top: 20px;
   }
 
   @media (min-width: 48em) {
     flex-direction: row;
     padding-bottom: 5px;
     margin-bottom: 30px;
+
 
     & > p {
       font-size: 15px;
