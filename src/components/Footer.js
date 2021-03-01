@@ -26,7 +26,7 @@ const Copyright = styled.span`
   display: block;
   text-align: center;
   padding: 40px 0 15px;
-  font-size: 13.3px;
+  font-size: 14px;
   color: #1F2933;
 `;
 
