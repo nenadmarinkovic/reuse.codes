@@ -36,7 +36,7 @@ const DateAndCategory = styled.div`
   align-items: center;
 
   @media (max-width: 765px) {
-    height: 80px;
+    height: 120px;
     flex-direction: column;
     justify-content: start;
     align-items: start;
@@ -44,7 +44,8 @@ const DateAndCategory = styled.div`
 
   & > p {
     font-size: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   @media (min-width: 48em) {
