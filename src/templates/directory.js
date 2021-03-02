@@ -46,13 +46,14 @@ const DateAndCategory = styled.div`
   & > p {
     font-size: 15px;
     margin-bottom: 20px;
+    line-height: inherit;
   }
 
   @media (min-width: 48em) {
     flex-direction: row;
     padding-bottom: 5px;
     margin-bottom: 30px;
-
+    align-items: baseline;
 
     & > p {
       font-size: 15px;

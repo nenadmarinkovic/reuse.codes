@@ -56,8 +56,13 @@ const MainContent = styled.div`
   height: 100%;
   flex: 1 0 auto;
   padding-bottom: 2em;
+  
   @media (max-width: 1200px) {
     padding: 0 15px 60px 15px;
+  }
+
+  p {
+    line-height: 1.8;
   }
 `;
 
