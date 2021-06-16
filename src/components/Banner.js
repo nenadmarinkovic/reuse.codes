@@ -99,6 +99,7 @@ const Button = styled.button`
   width: 260px;
   height: 60px;
   margin-top: 40px;
+  border-radius: 5px;
   background: #2EA44F;
   border: none;
   color: white;
