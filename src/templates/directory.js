@@ -110,7 +110,7 @@ export default ({ data }) => {
             <a
               sx={{
                 background: "#2EA44F",
-                padding: "5px 10px",
+                padding: "8px 10px",
                 color: "white",
                 borderRadius: "5px",
                 fontWeight: "700",
