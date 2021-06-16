@@ -14,8 +14,8 @@ const Wrapper = styled.main`
 
 const Category = styled.p`
  margin-top: 5px;
- background: #7CC1E4;
- color: white;
+ background: #ddd;
+ color: #000;
  padding: 6px 10px;
  border-radius: 5px;
 `;

@@ -1,0 +1,31 @@
+---
+title: Click outside of element
+date: 2021-05-31
+published: true
+category: javascript
+---
+
+Detect click outside of element and remove it (display: none):
+
+```js
+function hideOnClickOutside(element) {
+  const outsideClickListener = (event) => {
+    if (!element.contains(event.target) && isVisible(element)) {
+      console.log("Element clicked!");
+      removeClickListener();
+    } else {
+      console.log("Element not clicked!");
+    }
+  };
+
+  const removeClickListener = () => {
+    document.removeEventListener("click", outsideClickListener);
+  };
+
+  document.addEventListener("click", outsideClickListener);
+}
+
+const isVisible = (elem) =>
+  !!elem &&
+  !!(elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length);
+```

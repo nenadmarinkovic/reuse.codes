@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 import Form from "./Form";
 
 const FooterWrap = styled.footer`
-  background: #E4E7EB;
+  background: #F3F5F9;
   padding-top: -300px;
 `;
 

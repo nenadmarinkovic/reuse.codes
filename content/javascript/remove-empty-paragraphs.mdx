@@ -1,0 +1,17 @@
+---
+title: Remove empty paragraphs
+date: 2021-05-31
+published: true
+category: javascript
+---
+
+Remove empty paragraphs space (jQuery):
+
+```js
+$('p').each(function() {
+     var $p = $(this);
+     if($.trim($p.html())==='') {
+        $p.remove();
+     }
+});
+```

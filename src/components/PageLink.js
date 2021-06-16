@@ -10,7 +10,7 @@ const ShowMore = styled.div`
   font-family: monospace;
   font-weight: 600;
   margin-left: 5px;
-  color: #55AAD4;
+  color: #000;
   margin-left: 10px;
   visibility: hidden;
   opacity: 0;
@@ -25,7 +25,7 @@ const LinkBox = styled.div`
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  background-color: #e8edf3;
+  background-color: #F3F5F9;
 
   &:hover {
     box-shadow: 0 5px 10px rgba(0,0,0,0.12);
@@ -35,7 +35,7 @@ const LinkBox = styled.div`
     visibility: visible;
     opacity: 1;
    }
-  }
+  
 
   & > h3 {
     font-size: 1.2em;

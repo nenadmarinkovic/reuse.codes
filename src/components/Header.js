@@ -30,7 +30,7 @@ const Container = styled.header`
 
   & a > h1 {
     font-size: 1.7em;
-    color: #323F4B;
+    color: #000;
   }
 
   & > h2 {

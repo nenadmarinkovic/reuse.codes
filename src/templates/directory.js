@@ -19,7 +19,7 @@ const Title = styled.h1`
   grid-row: 1;
   text-align: start;
   font-size: 1.5em;
-  color: #323f4b;
+  color: #000;
   line-height: 1.5;
   width: 60%;
 
@@ -75,14 +75,14 @@ export default ({ data }) => {
             <p
               sx={{
                 fontWeight: "700",
-                color: "#55AAD4",
+                color: "#F7D708",
               }}
             >
               <Link
                 sx={{
-                  background: "#55AAD4",
-                  padding: "5px 10px",
-                  color: "white",
+                  background: "#F3F5F9",
+                  padding: "8px 10px",
+                  color: "black",
                   borderRadius: "5px",
                   fontWeight: "700",
                   fontSize: "15px",
@@ -96,9 +96,9 @@ export default ({ data }) => {
             </p>
             <p
               sx={{
-                background: "#55AAD4",
-                padding: "5px 10px",
-                color: "white",
+                background: "#F3F5F9",
+                padding: "8px 10px",
+                color: "black",
                 borderRadius: "5px",
                 fontWeight: "700",
                 fontSize: "15px",
@@ -109,7 +109,7 @@ export default ({ data }) => {
             </p>
             <a
               sx={{
-                background: "#7BC47F",
+                background: "#2EA44F",
                 padding: "5px 10px",
                 color: "white",
                 borderRadius: "5px",

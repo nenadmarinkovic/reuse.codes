@@ -50,7 +50,7 @@ const TextArea = styled.textarea`
 
 const Button = styled.button`
   padding: 0.65em 1em;
-  background: #7bc47f;
+  background: #2EA44F;
   border: 1px solid #d1d1d1;
   border-radius: 5px;
   color: white;
@@ -63,7 +63,7 @@ const Button = styled.button`
   transition: all 0.2s ease;
 
   :hover {
-    background-color: #57ae5b;
+    background-color: #299347;
   }
 
   @media (max-width: 512px) {
@@ -186,7 +186,7 @@ export default () => {
                           fontSize: "14px",
                         }}
                       >
-                        →
+                        
                       </span>
                     </FormText>
                   ) : (
@@ -201,7 +201,7 @@ export default () => {
           <br></br>
           {status.info.error && <Error>Error: {status.info.msg}</Error>}
           {!status.info.error && status.info.msg && (
-            <Message style={{ color: "#57AE5B", fontWeight: "bold", letterSpacing: "0.5px" }}>{status.info.msg}</Message>
+            <Message style={{ color: "#000", fontWeight: "bold", letterSpacing: "0.5px" }}>{status.info.msg}</Message>
           )}
         </MainForm>
       </FlexContainer>

@@ -43,7 +43,7 @@
   }
 
   a {
-    color: #55aad4;
+    color: #F7D708;
     font-weight: bold;
   }
 
@@ -56,7 +56,6 @@
     overflow-y: scroll;
     overflow-x: hidden;
     height: 100%;
-    background-color: #f5f7fa;
   }
 
   .prism-code {
