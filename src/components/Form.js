@@ -201,7 +201,7 @@ export default () => {
           <br></br>
           {status.info.error && <Error>Error: {status.info.msg}</Error>}
           {!status.info.error && status.info.msg && (
-            <Message style={{ color: "#000", fontWeight: "bold", letterSpacing: "0.5px" }}>{status.info.msg}</Message>
+            <Message style={{ color: "#24292E", fontWeight: "bold", letterSpacing: "0.5px" }}>{status.info.msg}</Message>
           )}
         </MainForm>
       </FlexContainer>

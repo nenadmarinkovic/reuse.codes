@@ -10,7 +10,7 @@ const ShowMore = styled.div`
   font-family: monospace;
   font-weight: 600;
   margin-left: 5px;
-  color: #000;
+  color: #24292E;
   margin-left: 10px;
   visibility: hidden;
   opacity: 0;

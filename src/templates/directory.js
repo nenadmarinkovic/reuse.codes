@@ -19,7 +19,7 @@ const Title = styled.h1`
   grid-row: 1;
   text-align: start;
   font-size: 1.5em;
-  color: #000;
+  color: #24292E;
   line-height: 1.5;
   width: 60%;
 

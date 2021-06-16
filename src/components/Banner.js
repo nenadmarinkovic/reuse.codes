@@ -4,7 +4,7 @@ import { keyframes } from "@emotion/core";
 import { Link } from "gatsby";
 
 const Header = styled.div`
-  background: #000;
+  background: #24292E;
   color: white;
   height: 60px;
   position: fixed;
@@ -57,7 +57,7 @@ const TitleSub = styled.div`
 `;
 
 const Text = styled.div`
-  color: #000;
+  color: #24292E;
   text-align: center;
   padding: 135px 0;
 
@@ -75,7 +75,7 @@ const Text = styled.div`
 const H1 = styled.h1`
   font-weight: 800;
   font-size: 71px;
-  color: #000;
+  color: #24292E;
   @media (max-width: 960px) {
     font-size: 51px;
   }
@@ -88,7 +88,7 @@ const H5 = styled.h5`
   margin-top: 20px;
   font-weight: 500;
   font-size: 28px;
-  color: #000;
+  color: #24292E;
   line-height: 1.8;
   @media (max-width: 512px) {
     font-size: 18px;

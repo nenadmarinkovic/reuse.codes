@@ -3,7 +3,7 @@
 var theme = {
   plain: {
     color: "#F8F8F2",
-    backgroundColor: "#000",
+    backgroundColor: "#24292E",
     fontFamily: "Consolas",
     fontSize: "16px",
     lineHeight: "1.7"
