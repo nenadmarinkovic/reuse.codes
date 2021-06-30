@@ -37,7 +37,7 @@ const TitleSub = styled.div`
 const TopHeader = styled.div`
   background: #24292E;
   color: white;
-  height: 55px;
+  height: 60px;
   position: fixed;
   top: 0;
   display: flex;
